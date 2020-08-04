@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/tastr/Udacity_Robostics/catkin_ws/devel/setup.sh
