@@ -7,6 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH=""
-export PKG_CONFIG_PATH=""
-export PWD="/home/tastr/Udacity_Robostics/catkin_ws/build"
+export PWD="/home/robond/Udacity_Robotics/catkin_ws/build"
