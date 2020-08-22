@@ -19,6 +19,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/home/robond/Udacity_Robotics/catkin_workspace/devel/include"
   "/home/robond/Udacity_Robotics/catkin_workspace/src/simple_arm/include"
+  "/opt/ros/kinetic/include"
+  "/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )
 
 # Targets to which this target links.

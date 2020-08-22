@@ -346,6 +346,126 @@ simple_arm_generate_messages/fast:
 .PHONY : simple_arm_generate_messages/fast
 
 # Convenience name for target.
+simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+.PHONY : simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_nodejs: simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : std_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+std_msgs_generate_messages_nodejs/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule
+.PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+simple_arm_generate_messages_lisp: simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule
+
+.PHONY : simple_arm_generate_messages_lisp
+
+# fast build rule for target.
+simple_arm_generate_messages_lisp/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/build.make simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/build
+.PHONY : simple_arm_generate_messages_lisp/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+.PHONY : simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+controller_manager_msgs_generate_messages_lisp: simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : controller_manager_msgs_generate_messages_lisp
+
+# fast build rule for target.
+controller_manager_msgs_generate_messages_lisp/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
+.PHONY : controller_manager_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+.PHONY : simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_eus: simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
+
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/build.make simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+.PHONY : simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_eus: simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
+
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 simple_arm/CMakeFiles/simple_arm_genpy.dir/rule:
 	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_arm_genpy.dir/rule
 .PHONY : simple_arm/CMakeFiles/simple_arm_genpy.dir/rule
@@ -404,156 +524,6 @@ controller_manager_msgs_generate_messages_eus: simple_arm/CMakeFiles/controller_
 controller_manager_msgs_generate_messages_eus/fast:
 	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_eus.dir/build
 .PHONY : controller_manager_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-.PHONY : simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_nodejs: simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/rule
-
-.PHONY : std_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule
-.PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-simple_arm_generate_messages_lisp: simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule
-
-.PHONY : simple_arm_generate_messages_lisp
-
-# fast build rule for target.
-simple_arm_generate_messages_lisp/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/build.make simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/build
-.PHONY : simple_arm_generate_messages_lisp/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-.PHONY : simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-controller_manager_msgs_generate_messages_lisp: simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : controller_manager_msgs_generate_messages_lisp
-
-# fast build rule for target.
-controller_manager_msgs_generate_messages_lisp/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build.make simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_lisp.dir/build
-.PHONY : controller_manager_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
-.PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-simple_arm_generate_messages_eus: simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
-
-.PHONY : simple_arm_generate_messages_eus
-
-# fast build rule for target.
-simple_arm_generate_messages_eus/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/build
-.PHONY : simple_arm_generate_messages_eus/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/simple_mover.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_mover.dir/rule
-.PHONY : simple_arm/CMakeFiles/simple_mover.dir/rule
-
-# Convenience name for target.
-simple_mover: simple_arm/CMakeFiles/simple_mover.dir/rule
-
-.PHONY : simple_mover
-
-# fast build rule for target.
-simple_mover/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_mover.dir/build.make simple_arm/CMakeFiles/simple_mover.dir/build
-.PHONY : simple_mover/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_lisp: simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-
-.PHONY : roscpp_generate_messages_lisp
-
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make simple_arm/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-.PHONY : simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_eus: simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/rule
-
-.PHONY : std_msgs_generate_messages_eus
-
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make simple_arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-# Convenience name for target.
-roscpp_generate_messages_py: simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
-
-.PHONY : roscpp_generate_messages_py
-
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/build.make simple_arm/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
-
-# Convenience name for target.
-simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-.PHONY : simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-rosgraph_msgs_generate_messages_eus: simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/rule
-
-.PHONY : rosgraph_msgs_generate_messages_eus
-
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 simple_arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
@@ -660,6 +630,36 @@ controller_manager_msgs_generate_messages_nodejs/fast:
 	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build.make simple_arm/CMakeFiles/controller_manager_msgs_generate_messages_nodejs.dir/build
 .PHONY : controller_manager_msgs_generate_messages_nodejs/fast
 
+# Convenience name for target.
+simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
+.PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+simple_arm_generate_messages_eus: simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
+
+.PHONY : simple_arm_generate_messages_eus
+
+# fast build rule for target.
+simple_arm_generate_messages_eus/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/build
+.PHONY : simple_arm_generate_messages_eus/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/simple_mover.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_mover.dir/rule
+.PHONY : simple_arm/CMakeFiles/simple_mover.dir/rule
+
+# Convenience name for target.
+simple_mover: simple_arm/CMakeFiles/simple_mover.dir/rule
+
+.PHONY : simple_mover
+
+# fast build rule for target.
+simple_mover/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_mover.dir/build.make simple_arm/CMakeFiles/simple_mover.dir/build
+.PHONY : simple_mover/fast
+
 src/simple_mover.o: src/simple_mover.cpp.o
 
 .PHONY : src/simple_mover.o
@@ -712,20 +712,18 @@ help:
 	@echo "... simple_arm_generate_messages_py"
 	@echo "... controller_manager_msgs_generate_messages_cpp"
 	@echo "... simple_arm_generate_messages"
+	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... simple_arm_generate_messages_lisp"
+	@echo "... controller_manager_msgs_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_eus"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_eus"
+	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... simple_arm_genpy"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... simple_arm_gencpp"
 	@echo "... controller_manager_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_nodejs"
-	@echo "... simple_arm_generate_messages_lisp"
-	@echo "... controller_manager_msgs_generate_messages_lisp"
-	@echo "... simple_arm_generate_messages_eus"
-	@echo "... simple_mover"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_eus"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
@@ -733,6 +731,8 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... controller_manager_msgs_generate_messages_nodejs"
+	@echo "... simple_arm_generate_messages_eus"
+	@echo "... simple_mover"
 	@echo "... src/simple_mover.o"
 	@echo "... src/simple_mover.i"
 	@echo "... src/simple_mover.s"

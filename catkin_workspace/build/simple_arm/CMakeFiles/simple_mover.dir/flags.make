@@ -6,5 +6,5 @@ CXX_FLAGS =
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"simple_arm\"
 
-CXX_INCLUDES = -I/home/robond/Udacity_Robotics/catkin_workspace/devel/include -I/home/robond/Udacity_Robotics/catkin_workspace/src/simple_arm/include 
+CXX_INCLUDES = -I/home/robond/Udacity_Robotics/catkin_workspace/devel/include -I/home/robond/Udacity_Robotics/catkin_workspace/src/simple_arm/include -I/opt/ros/kinetic/include -I/opt/ros/kinetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp 
 
