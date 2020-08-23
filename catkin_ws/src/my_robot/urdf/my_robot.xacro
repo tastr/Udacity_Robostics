@@ -2,6 +2,7 @@
 
 <robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
+<xacro:include filename="$(find my_robot)/urdf/my_robot.gazebo" />
   <link name="robot_footprint"></link>
 
   <joint name="robot_footprint_joint" type="fixed">
@@ -133,6 +134,7 @@
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
+    <commandTopic>cmd_vel</commandTopic>
   </joint>
 
   <joint type="continuous" name="right_wheel_hinge">
@@ -142,6 +144,7 @@
     <axis xyz="0 1 0" rpy="0 0 0"/>
     <limit effort="10000" velocity="1000"/>
     <dynamics damping="1.0" friction="1.0"/>
+    <commandTopic>cmd_vel</commandTopic>
   </joint>
 
  <link name='camera'>
@@ -170,7 +173,7 @@
         <box size=".05 .05 .05"/>
       </geometry>
     </visual>
-
+  <imageTopicName>rgb/image_raw</imageTopicName>
   </link>
 
   <joint type="fixed" name="camera_joint">
@@ -209,6 +212,7 @@
 	 <mesh filename = "package://my_robot/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
+   <topicName>/scan</topicName>
 
   </link>
 
@@ -222,5 +226,24 @@
   </joint>
 
 
+<gazebo reference="left_wheel">
+    <material>Gazebo/Green</material>
+</gazebo>
+
+<gazebo reference="right_wheel">
+    <material>Gazebo/Green</material>
+</gazebo>
+
+<gazebo reference="chassis">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
+<gazebo reference="camera">
+    <material>Gazebo/Red</material>
+</gazebo>
+
+<gazebo reference="hokuyo">
+    <material>Gazebo/Black</material>
+</gazebo>
 </robot>
 
