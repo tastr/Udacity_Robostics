@@ -68,37 +68,37 @@
 
 (defclass simple_arm::GoToPositionResponse
   :super ros::object
-  :slots (_time_elapsed ))
+  :slots (_msg_feedback ))
 
 (defmethod simple_arm::GoToPositionResponse
   (:init
    (&key
-    ((:time_elapsed __time_elapsed) (instance ros::time :init))
+    ((:msg_feedback __msg_feedback) "")
     )
    (send-super :init)
-   (setq _time_elapsed __time_elapsed)
+   (setq _msg_feedback (string __msg_feedback))
    self)
-  (:time_elapsed
-   (&optional __time_elapsed)
-   (if __time_elapsed (setq _time_elapsed __time_elapsed)) _time_elapsed)
+  (:msg_feedback
+   (&optional __msg_feedback)
+   (if __msg_feedback (setq _msg_feedback __msg_feedback)) _msg_feedback)
   (:serialization-length
    ()
    (+
-    ;; duration _time_elapsed
-    8
+    ;; string _msg_feedback
+    4 (length _msg_feedback)
     ))
   (:serialize
    (&optional strm)
    (let ((s (if strm strm
               (make-string-output-stream (send self :serialization-length)))))
-     ;; duration _time_elapsed
-       (write-long (send _time_elapsed :sec) s) (write-long (send _time_elapsed :nsec) s)
+     ;; string _msg_feedback
+       (write-long (length _msg_feedback) s) (princ _msg_feedback s)
      ;;
      (if (null strm) (get-output-stream-string s))))
   (:deserialize
    (buf &optional (ptr- 0))
-   ;; duration _time_elapsed
-     (send _time_elapsed :sec (sys::peek buf ptr- :integer)) (incf ptr- 4)  (send _time_elapsed :nsec (sys::peek buf ptr- :integer)) (incf ptr- 4)
+   ;; string _msg_feedback
+     (let (n) (setq n (sys::peek buf ptr- :integer)) (incf ptr- 4) (setq _msg_feedback (subseq buf ptr- (+ ptr- n))) (incf ptr- n))
    ;;
    self)
   )
@@ -107,7 +107,7 @@
   :super ros::object
   :slots ())
 
-(setf (get simple_arm::GoToPosition :md5sum-) "fc4e1ffd0bd5c9cc8c021e351562f1a8")
+(setf (get simple_arm::GoToPosition :md5sum-) "eb45b449ee9f05b300349d9c9af72154")
 (setf (get simple_arm::GoToPosition :datatype-) "simple_arm/GoToPosition")
 (setf (get simple_arm::GoToPosition :request) simple_arm::GoToPositionRequest)
 (setf (get simple_arm::GoToPosition :response) simple_arm::GoToPositionResponse)
@@ -115,28 +115,28 @@
 (defmethod simple_arm::GoToPositionRequest
   (:response () (instance simple_arm::GoToPositionResponse :init)))
 
-(setf (get simple_arm::GoToPositionRequest :md5sum-) "fc4e1ffd0bd5c9cc8c021e351562f1a8")
+(setf (get simple_arm::GoToPositionRequest :md5sum-) "eb45b449ee9f05b300349d9c9af72154")
 (setf (get simple_arm::GoToPositionRequest :datatype-) "simple_arm/GoToPositionRequest")
 (setf (get simple_arm::GoToPositionRequest :definition-)
       "float64 joint_1
 float64 joint_2
 ---
-duration time_elapsed
+string msg_feedback
 
 ")
 
-(setf (get simple_arm::GoToPositionResponse :md5sum-) "fc4e1ffd0bd5c9cc8c021e351562f1a8")
+(setf (get simple_arm::GoToPositionResponse :md5sum-) "eb45b449ee9f05b300349d9c9af72154")
 (setf (get simple_arm::GoToPositionResponse :datatype-) "simple_arm/GoToPositionResponse")
 (setf (get simple_arm::GoToPositionResponse :definition-)
       "float64 joint_1
 float64 joint_2
 ---
-duration time_elapsed
+string msg_feedback
 
 ")
 
 
 
-(provide :simple_arm/GoToPosition "fc4e1ffd0bd5c9cc8c021e351562f1a8")
+(provide :simple_arm/GoToPosition "eb45b449ee9f05b300349d9c9af72154")
 
 

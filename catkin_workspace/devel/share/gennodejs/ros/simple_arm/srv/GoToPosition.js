@@ -111,22 +111,22 @@ class GoToPositionResponse {
   constructor(initObj={}) {
     if (initObj === null) {
       // initObj === null is a special case for deserialization where we don't initialize fields
-      this.time_elapsed = null;
+      this.msg_feedback = null;
     }
     else {
-      if (initObj.hasOwnProperty('time_elapsed')) {
-        this.time_elapsed = initObj.time_elapsed
+      if (initObj.hasOwnProperty('msg_feedback')) {
+        this.msg_feedback = initObj.msg_feedback
       }
       else {
-        this.time_elapsed = {secs: 0, nsecs: 0};
+        this.msg_feedback = '';
       }
     }
   }
 
   static serialize(obj, buffer, bufferOffset) {
     // Serializes a message object of type GoToPositionResponse
-    // Serialize message field [time_elapsed]
-    bufferOffset = _serializer.duration(obj.time_elapsed, buffer, bufferOffset);
+    // Serialize message field [msg_feedback]
+    bufferOffset = _serializer.string(obj.msg_feedback, buffer, bufferOffset);
     return bufferOffset;
   }
 
@@ -134,13 +134,15 @@ class GoToPositionResponse {
     //deserializes a message object of type GoToPositionResponse
     let len;
     let data = new GoToPositionResponse(null);
-    // Deserialize message field [time_elapsed]
-    data.time_elapsed = _deserializer.duration(buffer, bufferOffset);
+    // Deserialize message field [msg_feedback]
+    data.msg_feedback = _deserializer.string(buffer, bufferOffset);
     return data;
   }
 
   static getMessageSize(object) {
-    return 8;
+    let length = 0;
+    length += object.msg_feedback.length;
+    return length + 4;
   }
 
   static datatype() {
@@ -150,13 +152,13 @@ class GoToPositionResponse {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '5cf2a912daf51cc83cb45e261a19d4f1';
+    return '2897a4bc4d7ca330e430870cfdee7314';
   }
 
   static messageDefinition() {
     // Returns full string definition for message
     return `
-    duration time_elapsed
+    string msg_feedback
     
     
     `;
@@ -168,11 +170,11 @@ class GoToPositionResponse {
       msg = {};
     }
     const resolved = new GoToPositionResponse(null);
-    if (msg.time_elapsed !== undefined) {
-      resolved.time_elapsed = msg.time_elapsed;
+    if (msg.msg_feedback !== undefined) {
+      resolved.msg_feedback = msg.msg_feedback;
     }
     else {
-      resolved.time_elapsed = {secs: 0, nsecs: 0}
+      resolved.msg_feedback = ''
     }
 
     return resolved;
@@ -182,6 +184,6 @@ class GoToPositionResponse {
 module.exports = {
   Request: GoToPositionRequest,
   Response: GoToPositionResponse,
-  md5sum() { return 'fc4e1ffd0bd5c9cc8c021e351562f1a8'; },
+  md5sum() { return 'eb45b449ee9f05b300349d9c9af72154'; },
   datatype() { return 'simple_arm/GoToPosition'; }
 };

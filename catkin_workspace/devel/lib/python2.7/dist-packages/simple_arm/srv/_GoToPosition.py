@@ -119,17 +119,16 @@ python3 = True if sys.hexversion > 0x03000000 else False
 import genpy
 import struct
 
-import genpy
 
 class GoToPositionResponse(genpy.Message):
-  _md5sum = "5cf2a912daf51cc83cb45e261a19d4f1"
+  _md5sum = "2897a4bc4d7ca330e430870cfdee7314"
   _type = "simple_arm/GoToPositionResponse"
   _has_header = False #flag to mark the presence of a Header object
-  _full_text = """duration time_elapsed
+  _full_text = """string msg_feedback
 
 """
-  __slots__ = ['time_elapsed']
-  _slot_types = ['duration']
+  __slots__ = ['msg_feedback']
+  _slot_types = ['string']
 
   def __init__(self, *args, **kwds):
     """
@@ -139,7 +138,7 @@ class GoToPositionResponse(genpy.Message):
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       time_elapsed
+       msg_feedback
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -148,10 +147,10 @@ class GoToPositionResponse(genpy.Message):
     if args or kwds:
       super(GoToPositionResponse, self).__init__(*args, **kwds)
       #message fields cannot be None, assign default values for those that are
-      if self.time_elapsed is None:
-        self.time_elapsed = genpy.Duration()
+      if self.msg_feedback is None:
+        self.msg_feedback = ''
     else:
-      self.time_elapsed = genpy.Duration()
+      self.msg_feedback = ''
 
   def _get_types(self):
     """
@@ -165,8 +164,12 @@ class GoToPositionResponse(genpy.Message):
     :param buff: buffer, ``StringIO``
     """
     try:
-      _x = self
-      buff.write(_get_struct_2i().pack(_x.time_elapsed.secs, _x.time_elapsed.nsecs))
+      _x = self.msg_feedback
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.pack('<I%ss'%length, length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -176,14 +179,16 @@ class GoToPositionResponse(genpy.Message):
     :param str: byte array of serialized message, ``str``
     """
     try:
-      if self.time_elapsed is None:
-        self.time_elapsed = genpy.Duration()
       end = 0
-      _x = self
       start = end
-      end += 8
-      (_x.time_elapsed.secs, _x.time_elapsed.nsecs,) = _get_struct_2i().unpack(str[start:end])
-      self.time_elapsed.canon()
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.msg_feedback = str[start:end].decode('utf-8')
+      else:
+        self.msg_feedback = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -196,8 +201,12 @@ class GoToPositionResponse(genpy.Message):
     :param numpy: numpy python module
     """
     try:
-      _x = self
-      buff.write(_get_struct_2i().pack(_x.time_elapsed.secs, _x.time_elapsed.nsecs))
+      _x = self.msg_feedback
+      length = len(_x)
+      if python3 or type(_x) == unicode:
+        _x = _x.encode('utf-8')
+        length = len(_x)
+      buff.write(struct.pack('<I%ss'%length, length, _x))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(locals().get('_x', self)))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(locals().get('_x', self)))))
 
@@ -208,14 +217,16 @@ class GoToPositionResponse(genpy.Message):
     :param numpy: numpy python module
     """
     try:
-      if self.time_elapsed is None:
-        self.time_elapsed = genpy.Duration()
       end = 0
-      _x = self
       start = end
-      end += 8
-      (_x.time_elapsed.secs, _x.time_elapsed.nsecs,) = _get_struct_2i().unpack(str[start:end])
-      self.time_elapsed.canon()
+      end += 4
+      (length,) = _struct_I.unpack(str[start:end])
+      start = end
+      end += length
+      if python3:
+        self.msg_feedback = str[start:end].decode('utf-8')
+      else:
+        self.msg_feedback = str[start:end]
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -224,14 +235,8 @@ _struct_I = genpy.struct_I
 def _get_struct_I():
     global _struct_I
     return _struct_I
-_struct_2i = None
-def _get_struct_2i():
-    global _struct_2i
-    if _struct_2i is None:
-        _struct_2i = struct.Struct("<2i")
-    return _struct_2i
 class GoToPosition(object):
   _type          = 'simple_arm/GoToPosition'
-  _md5sum = 'fc4e1ffd0bd5c9cc8c021e351562f1a8'
+  _md5sum = 'eb45b449ee9f05b300349d9c9af72154'
   _request_class  = GoToPositionRequest
   _response_class = GoToPositionResponse

@@ -89,10 +89,10 @@
   "simple_arm/GoToPositionRequest")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<GoToPosition-request>)))
   "Returns md5sum for a message object of type '<GoToPosition-request>"
-  "fc4e1ffd0bd5c9cc8c021e351562f1a8")
+  "eb45b449ee9f05b300349d9c9af72154")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'GoToPosition-request)))
   "Returns md5sum for a message object of type 'GoToPosition-request"
-  "fc4e1ffd0bd5c9cc8c021e351562f1a8")
+  "eb45b449ee9f05b300349d9c9af72154")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<GoToPosition-request>)))
   "Returns full string definition for message of type '<GoToPosition-request>"
   (cl:format cl:nil "float64 joint_1~%float64 joint_2~%~%~%"))
@@ -113,11 +113,11 @@
 ;//! \htmlinclude GoToPosition-response.msg.html
 
 (cl:defclass <GoToPosition-response> (roslisp-msg-protocol:ros-message)
-  ((time_elapsed
-    :reader time_elapsed
-    :initarg :time_elapsed
-    :type cl:real
-    :initform 0))
+  ((msg_feedback
+    :reader msg_feedback
+    :initarg :msg_feedback
+    :type cl:string
+    :initform ""))
 )
 
 (cl:defclass GoToPosition-response (<GoToPosition-response>)
@@ -128,35 +128,29 @@
   (cl:unless (cl:typep m 'GoToPosition-response)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name simple_arm-srv:<GoToPosition-response> is deprecated: use simple_arm-srv:GoToPosition-response instead.")))
 
-(cl:ensure-generic-function 'time_elapsed-val :lambda-list '(m))
-(cl:defmethod time_elapsed-val ((m <GoToPosition-response>))
-  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader simple_arm-srv:time_elapsed-val is deprecated.  Use simple_arm-srv:time_elapsed instead.")
-  (time_elapsed m))
+(cl:ensure-generic-function 'msg_feedback-val :lambda-list '(m))
+(cl:defmethod msg_feedback-val ((m <GoToPosition-response>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader simple_arm-srv:msg_feedback-val is deprecated.  Use simple_arm-srv:msg_feedback instead.")
+  (msg_feedback m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <GoToPosition-response>) ostream)
   "Serializes a message object of type '<GoToPosition-response>"
-  (cl:let ((__sec (cl:floor (cl:slot-value msg 'time_elapsed)))
-        (__nsec (cl:round (cl:* 1e9 (cl:- (cl:slot-value msg 'time_elapsed) (cl:floor (cl:slot-value msg 'time_elapsed)))))))
-    (cl:write-byte (cl:ldb (cl:byte 8 0) __sec) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 8) __sec) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 16) __sec) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 24) __sec) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 0) __nsec) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 8) __nsec) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 16) __nsec) ostream)
-    (cl:write-byte (cl:ldb (cl:byte 8 24) __nsec) ostream))
+  (cl:let ((__ros_str_len (cl:length (cl:slot-value msg 'msg_feedback))))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) __ros_str_len) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) __ros_str_len) ostream))
+  (cl:map cl:nil #'(cl:lambda (c) (cl:write-byte (cl:char-code c) ostream)) (cl:slot-value msg 'msg_feedback))
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <GoToPosition-response>) istream)
   "Deserializes a message object of type '<GoToPosition-response>"
-    (cl:let ((__sec 0) (__nsec 0))
-      (cl:setf (cl:ldb (cl:byte 8 0) __sec) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 8) __sec) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 16) __sec) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 24) __sec) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 0) __nsec) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 8) __nsec) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 16) __nsec) (cl:read-byte istream))
-      (cl:setf (cl:ldb (cl:byte 8 24) __nsec) (cl:read-byte istream))
-      (cl:setf (cl:slot-value msg 'time_elapsed) (cl:+ (cl:coerce __sec 'cl:double-float) (cl:/ __nsec 1e9))))
+    (cl:let ((__ros_str_len 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) __ros_str_len) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'msg_feedback) (cl:make-string __ros_str_len))
+      (cl:dotimes (__ros_str_idx __ros_str_len msg)
+        (cl:setf (cl:char (cl:slot-value msg 'msg_feedback) __ros_str_idx) (cl:code-char (cl:read-byte istream)))))
   msg
 )
 (cl:defmethod roslisp-msg-protocol:ros-datatype ((msg (cl:eql '<GoToPosition-response>)))
@@ -167,24 +161,24 @@
   "simple_arm/GoToPositionResponse")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<GoToPosition-response>)))
   "Returns md5sum for a message object of type '<GoToPosition-response>"
-  "fc4e1ffd0bd5c9cc8c021e351562f1a8")
+  "eb45b449ee9f05b300349d9c9af72154")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'GoToPosition-response)))
   "Returns md5sum for a message object of type 'GoToPosition-response"
-  "fc4e1ffd0bd5c9cc8c021e351562f1a8")
+  "eb45b449ee9f05b300349d9c9af72154")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<GoToPosition-response>)))
   "Returns full string definition for message of type '<GoToPosition-response>"
-  (cl:format cl:nil "duration time_elapsed~%~%~%~%"))
+  (cl:format cl:nil "string msg_feedback~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'GoToPosition-response)))
   "Returns full string definition for message of type 'GoToPosition-response"
-  (cl:format cl:nil "duration time_elapsed~%~%~%~%"))
+  (cl:format cl:nil "string msg_feedback~%~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <GoToPosition-response>))
   (cl:+ 0
-     8
+     4 (cl:length (cl:slot-value msg 'msg_feedback))
 ))
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <GoToPosition-response>))
   "Converts a ROS message object to a list"
   (cl:list 'GoToPosition-response
-    (cl:cons ':time_elapsed (time_elapsed msg))
+    (cl:cons ':msg_feedback (msg_feedback msg))
 ))
 (cl:defmethod roslisp-msg-protocol:service-request-type ((msg (cl:eql 'GoToPosition)))
   'GoToPosition-request)

@@ -40,7 +40,7 @@ template<>
 struct MD5Sum< ::simple_arm::GoToPosition > {
   static const char* value()
   {
-    return "fc4e1ffd0bd5c9cc8c021e351562f1a8";
+    return "eb45b449ee9f05b300349d9c9af72154";
   }
 
   static const char* value(const ::simple_arm::GoToPosition&) { return value(); }

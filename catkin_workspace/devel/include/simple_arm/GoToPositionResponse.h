@@ -24,17 +24,17 @@ struct GoToPositionResponse_
   typedef GoToPositionResponse_<ContainerAllocator> Type;
 
   GoToPositionResponse_()
-    : time_elapsed()  {
+    : msg_feedback()  {
     }
   GoToPositionResponse_(const ContainerAllocator& _alloc)
-    : time_elapsed()  {
+    : msg_feedback(_alloc)  {
   (void)_alloc;
     }
 
 
 
-   typedef ros::Duration _time_elapsed_type;
-  _time_elapsed_type time_elapsed;
+   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _msg_feedback_type;
+  _msg_feedback_type msg_feedback;
 
 
 
@@ -69,7 +69,7 @@ namespace message_traits
 
 
 
-// BOOLTRAITS {'IsFixedSize': True, 'IsMessage': True, 'HasHeader': False}
+// BOOLTRAITS {'IsFixedSize': False, 'IsMessage': True, 'HasHeader': False}
 // {'std_msgs': ['/opt/ros/kinetic/share/std_msgs/cmake/../msg']}
 
 // !!!!!!!!!!! ['__class__', '__delattr__', '__dict__', '__doc__', '__eq__', '__format__', '__getattribute__', '__hash__', '__init__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_parsed_fields', 'constants', 'fields', 'full_name', 'has_header', 'header_present', 'names', 'package', 'parsed_fields', 'short_name', 'text', 'types']
@@ -79,12 +79,12 @@ namespace message_traits
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::simple_arm::GoToPositionResponse_<ContainerAllocator> >
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
 struct IsFixedSize< ::simple_arm::GoToPositionResponse_<ContainerAllocator> const>
-  : TrueType
+  : FalseType
   { };
 
 template <class ContainerAllocator>
@@ -113,12 +113,12 @@ struct MD5Sum< ::simple_arm::GoToPositionResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "5cf2a912daf51cc83cb45e261a19d4f1";
+    return "2897a4bc4d7ca330e430870cfdee7314";
   }
 
   static const char* value(const ::simple_arm::GoToPositionResponse_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x5cf2a912daf51cc8ULL;
-  static const uint64_t static_value2 = 0x3cb45e261a19d4f1ULL;
+  static const uint64_t static_value1 = 0x2897a4bc4d7ca330ULL;
+  static const uint64_t static_value2 = 0xe430870cfdee7314ULL;
 };
 
 template<class ContainerAllocator>
@@ -137,7 +137,7 @@ struct Definition< ::simple_arm::GoToPositionResponse_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "duration time_elapsed\n\
+    return "string msg_feedback\n\
 \n\
 ";
   }
@@ -157,7 +157,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
-      stream.next(m.time_elapsed);
+      stream.next(m.msg_feedback);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER
@@ -176,8 +176,8 @@ struct Printer< ::simple_arm::GoToPositionResponse_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::simple_arm::GoToPositionResponse_<ContainerAllocator>& v)
   {
-    s << indent << "time_elapsed: ";
-    Printer<ros::Duration>::stream(s, indent + "  ", v.time_elapsed);
+    s << indent << "msg_feedback: ";
+    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.msg_feedback);
   }
 };
 

@@ -166,6 +166,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+simple_arm/CMakeFiles/arm_mover.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/arm_mover.dir/rule
+.PHONY : simple_arm/CMakeFiles/arm_mover.dir/rule
+
+# Convenience name for target.
+arm_mover: simple_arm/CMakeFiles/arm_mover.dir/rule
+
+.PHONY : arm_mover
+
+# fast build rule for target.
+arm_mover/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/arm_mover.dir/build.make simple_arm/CMakeFiles/arm_mover.dir/build
+.PHONY : arm_mover/fast
+
+# Convenience name for target.
 simple_arm/CMakeFiles/simple_arm_gennodejs.dir/rule:
 	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_arm_gennodejs.dir/rule
 .PHONY : simple_arm/CMakeFiles/simple_arm_gennodejs.dir/rule
@@ -211,19 +226,34 @@ simple_arm_geneus/fast:
 .PHONY : simple_arm_geneus/fast
 
 # Convenience name for target.
-simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/rule
-.PHONY : simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/rule
+simple_arm/CMakeFiles/simple_mover.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_mover.dir/rule
+.PHONY : simple_arm/CMakeFiles/simple_mover.dir/rule
 
 # Convenience name for target.
-_simple_arm_generate_messages_check_deps_GoToPosition: simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/rule
+simple_mover: simple_arm/CMakeFiles/simple_mover.dir/rule
 
-.PHONY : _simple_arm_generate_messages_check_deps_GoToPosition
+.PHONY : simple_mover
 
 # fast build rule for target.
-_simple_arm_generate_messages_check_deps_GoToPosition/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/build.make simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/build
-.PHONY : _simple_arm_generate_messages_check_deps_GoToPosition/fast
+simple_mover/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_mover.dir/build.make simple_arm/CMakeFiles/simple_mover.dir/build
+.PHONY : simple_mover/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
+.PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+simple_arm_generate_messages_eus: simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
+
+.PHONY : simple_arm_generate_messages_eus
+
+# fast build rule for target.
+simple_arm_generate_messages_eus/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/build
+.PHONY : simple_arm_generate_messages_eus/fast
 
 # Convenience name for target.
 simple_arm/CMakeFiles/simple_arm_generate_messages_cpp.dir/rule:
@@ -359,6 +389,21 @@ std_msgs_generate_messages_nodejs: simple_arm/CMakeFiles/std_msgs_generate_messa
 std_msgs_generate_messages_nodejs/fast:
 	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make simple_arm/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
 .PHONY : std_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+simple_arm/CMakeFiles/look_away.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/look_away.dir/rule
+.PHONY : simple_arm/CMakeFiles/look_away.dir/rule
+
+# Convenience name for target.
+look_away: simple_arm/CMakeFiles/look_away.dir/rule
+
+.PHONY : look_away
+
+# fast build rule for target.
+look_away/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/look_away.dir/build.make simple_arm/CMakeFiles/look_away.dir/build
+.PHONY : look_away/fast
 
 # Convenience name for target.
 simple_arm/CMakeFiles/simple_arm_generate_messages_lisp.dir/rule:
@@ -631,34 +676,73 @@ controller_manager_msgs_generate_messages_nodejs/fast:
 .PHONY : controller_manager_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
-simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
-.PHONY : simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
+simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/rule
+.PHONY : simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/rule
 
 # Convenience name for target.
-simple_arm_generate_messages_eus: simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/rule
+_simple_arm_generate_messages_check_deps_GoToPosition: simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/rule
 
-.PHONY : simple_arm_generate_messages_eus
+.PHONY : _simple_arm_generate_messages_check_deps_GoToPosition
 
 # fast build rule for target.
-simple_arm_generate_messages_eus/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/build.make simple_arm/CMakeFiles/simple_arm_generate_messages_eus.dir/build
-.PHONY : simple_arm_generate_messages_eus/fast
+_simple_arm_generate_messages_check_deps_GoToPosition/fast:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/build.make simple_arm/CMakeFiles/_simple_arm_generate_messages_check_deps_GoToPosition.dir/build
+.PHONY : _simple_arm_generate_messages_check_deps_GoToPosition/fast
 
-# Convenience name for target.
-simple_arm/CMakeFiles/simple_mover.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f CMakeFiles/Makefile2 simple_arm/CMakeFiles/simple_mover.dir/rule
-.PHONY : simple_arm/CMakeFiles/simple_mover.dir/rule
+src/arm_mover.o: src/arm_mover.cpp.o
 
-# Convenience name for target.
-simple_mover: simple_arm/CMakeFiles/simple_mover.dir/rule
+.PHONY : src/arm_mover.o
 
-.PHONY : simple_mover
+# target to build an object file
+src/arm_mover.cpp.o:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/arm_mover.dir/build.make simple_arm/CMakeFiles/arm_mover.dir/src/arm_mover.cpp.o
+.PHONY : src/arm_mover.cpp.o
 
-# fast build rule for target.
-simple_mover/fast:
-	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/simple_mover.dir/build.make simple_arm/CMakeFiles/simple_mover.dir/build
-.PHONY : simple_mover/fast
+src/arm_mover.i: src/arm_mover.cpp.i
+
+.PHONY : src/arm_mover.i
+
+# target to preprocess a source file
+src/arm_mover.cpp.i:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/arm_mover.dir/build.make simple_arm/CMakeFiles/arm_mover.dir/src/arm_mover.cpp.i
+.PHONY : src/arm_mover.cpp.i
+
+src/arm_mover.s: src/arm_mover.cpp.s
+
+.PHONY : src/arm_mover.s
+
+# target to generate assembly for a file
+src/arm_mover.cpp.s:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/arm_mover.dir/build.make simple_arm/CMakeFiles/arm_mover.dir/src/arm_mover.cpp.s
+.PHONY : src/arm_mover.cpp.s
+
+src/look_away.o: src/look_away.cpp.o
+
+.PHONY : src/look_away.o
+
+# target to build an object file
+src/look_away.cpp.o:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/look_away.dir/build.make simple_arm/CMakeFiles/look_away.dir/src/look_away.cpp.o
+.PHONY : src/look_away.cpp.o
+
+src/look_away.i: src/look_away.cpp.i
+
+.PHONY : src/look_away.i
+
+# target to preprocess a source file
+src/look_away.cpp.i:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/look_away.dir/build.make simple_arm/CMakeFiles/look_away.dir/src/look_away.cpp.i
+.PHONY : src/look_away.cpp.i
+
+src/look_away.s: src/look_away.cpp.s
+
+.PHONY : src/look_away.s
+
+# target to generate assembly for a file
+src/look_away.cpp.s:
+	cd /home/robond/Udacity_Robotics/catkin_workspace/build && $(MAKE) -f simple_arm/CMakeFiles/look_away.dir/build.make simple_arm/CMakeFiles/look_away.dir/src/look_away.cpp.s
+.PHONY : src/look_away.cpp.s
 
 src/simple_mover.o: src/simple_mover.cpp.o
 
@@ -698,11 +782,13 @@ help:
 	@echo "... edit_cache"
 	@echo "... test"
 	@echo "... install/local"
+	@echo "... arm_mover"
 	@echo "... simple_arm_gennodejs"
 	@echo "... simple_arm_genlisp"
 	@echo "... install/strip"
 	@echo "... simple_arm_geneus"
-	@echo "... _simple_arm_generate_messages_check_deps_GoToPosition"
+	@echo "... simple_mover"
+	@echo "... simple_arm_generate_messages_eus"
 	@echo "... simple_arm_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
 	@echo "... controller_manager_msgs_generate_messages_py"
@@ -713,6 +799,7 @@ help:
 	@echo "... controller_manager_msgs_generate_messages_cpp"
 	@echo "... simple_arm_generate_messages"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... look_away"
 	@echo "... simple_arm_generate_messages_lisp"
 	@echo "... controller_manager_msgs_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_lisp"
@@ -731,8 +818,13 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
 	@echo "... controller_manager_msgs_generate_messages_nodejs"
-	@echo "... simple_arm_generate_messages_eus"
-	@echo "... simple_mover"
+	@echo "... _simple_arm_generate_messages_check_deps_GoToPosition"
+	@echo "... src/arm_mover.o"
+	@echo "... src/arm_mover.i"
+	@echo "... src/arm_mover.s"
+	@echo "... src/look_away.o"
+	@echo "... src/look_away.i"
+	@echo "... src/look_away.s"
 	@echo "... src/simple_mover.o"
 	@echo "... src/simple_mover.i"
 	@echo "... src/simple_mover.s"
