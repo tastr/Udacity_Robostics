@@ -166,19 +166,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-ball_chaser/CMakeFiles/ball_chaser.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/ball_chaser.dir/rule
-.PHONY : ball_chaser/CMakeFiles/ball_chaser.dir/rule
+ball_chaser/CMakeFiles/drive_bot.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/drive_bot.dir/rule
+.PHONY : ball_chaser/CMakeFiles/drive_bot.dir/rule
 
 # Convenience name for target.
-ball_chaser: ball_chaser/CMakeFiles/ball_chaser.dir/rule
+drive_bot: ball_chaser/CMakeFiles/drive_bot.dir/rule
 
-.PHONY : ball_chaser
+.PHONY : drive_bot
 
 # fast build rule for target.
-ball_chaser/fast:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/build
-.PHONY : ball_chaser/fast
+drive_bot/fast:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/build
+.PHONY : drive_bot/fast
 
 # Convenience name for target.
 ball_chaser/CMakeFiles/ball_chaser_gennodejs.dir/rule:
@@ -496,6 +496,21 @@ std_msgs_generate_messages_lisp/fast:
 .PHONY : std_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
+ball_chaser/CMakeFiles/process_image.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/process_image.dir/rule
+.PHONY : ball_chaser/CMakeFiles/process_image.dir/rule
+
+# Convenience name for target.
+process_image: ball_chaser/CMakeFiles/process_image.dir/rule
+
+.PHONY : process_image
+
+# fast build rule for target.
+process_image/fast:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/build
+.PHONY : process_image/fast
+
+# Convenience name for target.
 ball_chaser/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
 	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 ball_chaser/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
 .PHONY : ball_chaser/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
@@ -591,7 +606,7 @@ src/drive_bot.o: src/drive_bot.cpp.o
 
 # target to build an object file
 src/drive_bot.cpp.o:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/src/drive_bot.cpp.o
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.o
 .PHONY : src/drive_bot.cpp.o
 
 src/drive_bot.i: src/drive_bot.cpp.i
@@ -600,7 +615,7 @@ src/drive_bot.i: src/drive_bot.cpp.i
 
 # target to preprocess a source file
 src/drive_bot.cpp.i:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/src/drive_bot.cpp.i
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.i
 .PHONY : src/drive_bot.cpp.i
 
 src/drive_bot.s: src/drive_bot.cpp.s
@@ -609,8 +624,35 @@ src/drive_bot.s: src/drive_bot.cpp.s
 
 # target to generate assembly for a file
 src/drive_bot.cpp.s:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/ball_chaser.dir/build.make ball_chaser/CMakeFiles/ball_chaser.dir/src/drive_bot.cpp.s
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/drive_bot.dir/build.make ball_chaser/CMakeFiles/drive_bot.dir/src/drive_bot.cpp.s
 .PHONY : src/drive_bot.cpp.s
+
+src/process_image.o: src/process_image.cpp.o
+
+.PHONY : src/process_image.o
+
+# target to build an object file
+src/process_image.cpp.o:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.o
+.PHONY : src/process_image.cpp.o
+
+src/process_image.i: src/process_image.cpp.i
+
+.PHONY : src/process_image.i
+
+# target to preprocess a source file
+src/process_image.cpp.i:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.i
+.PHONY : src/process_image.cpp.i
+
+src/process_image.s: src/process_image.cpp.s
+
+.PHONY : src/process_image.s
+
+# target to generate assembly for a file
+src/process_image.cpp.s:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f ball_chaser/CMakeFiles/process_image.dir/build.make ball_chaser/CMakeFiles/process_image.dir/src/process_image.cpp.s
+.PHONY : src/process_image.cpp.s
 
 # Help Target
 help:
@@ -623,7 +665,7 @@ help:
 	@echo "... test"
 	@echo "... install/local"
 	@echo "... install/strip"
-	@echo "... ball_chaser"
+	@echo "... drive_bot"
 	@echo "... ball_chaser_gennodejs"
 	@echo "... install"
 	@echo "... ball_chaser_genlisp"
@@ -646,6 +688,7 @@ help:
 	@echo "... ball_chaser_generate_messages"
 	@echo "... std_msgs_generate_messages_nodejs"
 	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... process_image"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... _ball_chaser_generate_messages_check_deps_DriveToTarget"
@@ -656,6 +699,9 @@ help:
 	@echo "... src/drive_bot.o"
 	@echo "... src/drive_bot.i"
 	@echo "... src/drive_bot.s"
+	@echo "... src/process_image.o"
+	@echo "... src/process_image.i"
+	@echo "... src/process_image.s"
 .PHONY : help
 
 

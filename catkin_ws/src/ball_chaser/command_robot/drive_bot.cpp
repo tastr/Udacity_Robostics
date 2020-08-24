@@ -2,11 +2,6 @@
 #include "geometry_msgs/Twist.h"
 #include "ball_chaser/DriveToTarget.h"
 #include <std_msgs/Float64.h>
-#include <sstream>
-#include <string>
-#include <iostream>
-
-
 
 // ROS::Publisher motor commands;
 ros::Publisher motor_command_publisher;
@@ -31,17 +26,22 @@ bool handle_drive_request(ball_chaser::DriveToTarget::Request& req,
     left_wheel_hinge_angular_z.data = req.angular_z;
     right_wheel_hinge_angular_z.data = req.angular_z;
 
-   // Create a motor_command object of type geometry_msgs::Twist
+
+
+    // Wait 3 seconds for robot to settle
+    ros::Duration(3).sleep();
+
+    // Create a motor_command object of type geometry_msgs::Twist
     geometry_msgs::Twist motor_command;
     // Set wheel velocities
     motor_command.linear.x = req.linear_x;
     motor_command.angular.z = req.angular_z;
     // Publish angles to drive the robot
     motor_command_publisher.publish(motor_command);
-
     // Return a response message
     res.msg_feedback = "Velocities set: linear: " + std::to_string(req.linear_x) + " , angular: " + std::to_string(req.angular_z);
     ROS_INFO_STREAM(res.msg_feedback);
+
 
 
     return true;
