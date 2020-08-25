@@ -27,6 +27,13 @@
 /home/robond/Udacity_Robotics/catkin_workspace/build/first_package/CMakeFiles/install/local.dir
 /home/robond/Udacity_Robotics/catkin_workspace/build/first_package/CMakeFiles/install/strip.dir
 /home/robond/Udacity_Robotics/catkin_workspace/build/first_package/CMakeFiles/test.dir
+/home/robond/Udacity_Robotics/catkin_workspace/build/my_robot/CMakeFiles/list_install_components.dir
+/home/robond/Udacity_Robotics/catkin_workspace/build/my_robot/CMakeFiles/install.dir
+/home/robond/Udacity_Robotics/catkin_workspace/build/my_robot/CMakeFiles/rebuild_cache.dir
+/home/robond/Udacity_Robotics/catkin_workspace/build/my_robot/CMakeFiles/install/strip.dir
+/home/robond/Udacity_Robotics/catkin_workspace/build/my_robot/CMakeFiles/install/local.dir
+/home/robond/Udacity_Robotics/catkin_workspace/build/my_robot/CMakeFiles/test.dir
+/home/robond/Udacity_Robotics/catkin_workspace/build/my_robot/CMakeFiles/edit_cache.dir
 /home/robond/Udacity_Robotics/catkin_workspace/build/simple_arm/CMakeFiles/list_install_components.dir
 /home/robond/Udacity_Robotics/catkin_workspace/build/simple_arm/CMakeFiles/rebuild_cache.dir
 /home/robond/Udacity_Robotics/catkin_workspace/build/simple_arm/CMakeFiles/edit_cache.dir

@@ -14,6 +14,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
   "first_package/catkin_generated/package.cmake"
+  "my_robot/catkin_generated/package.cmake"
   "simple_arm/catkin_generated/ordered_paths.cmake"
   "simple_arm/catkin_generated/package.cmake"
   "simple_arm/catkin_generated/simple_arm-msg-extras.cmake.develspace.in"
@@ -23,6 +24,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/home/robond/Udacity_Robotics/catkin_workspace/src/CMakeLists.txt"
   "/home/robond/Udacity_Robotics/catkin_workspace/src/first_package/CMakeLists.txt"
   "/home/robond/Udacity_Robotics/catkin_workspace/src/first_package/package.xml"
+  "/home/robond/Udacity_Robotics/catkin_workspace/src/my_robot/CMakeLists.txt"
+  "/home/robond/Udacity_Robotics/catkin_workspace/src/my_robot/package.xml"
   "/home/robond/Udacity_Robotics/catkin_workspace/src/simple_arm/CMakeLists.txt"
   "/home/robond/Udacity_Robotics/catkin_workspace/src/simple_arm/package.xml"
   "/opt/ros/kinetic/share/catkin/cmake/../package.xml"
@@ -204,6 +207,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "first_package/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "my_robot/CMakeFiles/CMakeDirectoryInformation.cmake"
   "simple_arm/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

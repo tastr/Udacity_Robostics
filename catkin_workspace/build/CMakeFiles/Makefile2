@@ -353,6 +353,24 @@ clean: first_package/CMakeFiles/_catkin_empty_exported_target.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Directory level rules for directory my_robot
+
+# Convenience name for "all" pass in the directory.
+my_robot/all:
+
+.PHONY : my_robot/all
+
+# Convenience name for "clean" pass in the directory.
+my_robot/clean:
+
+.PHONY : my_robot/clean
+
+# Convenience name for "preinstall" pass in the directory.
+my_robot/preinstall:
+
+.PHONY : my_robot/preinstall
+
+#=============================================================================
 # Directory level rules for directory simple_arm
 
 # Convenience name for "all" pass in the directory.
