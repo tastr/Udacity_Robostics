@@ -58,10 +58,10 @@ void process_image_callback(const sensor_msgs::Image img)
     if (found_white_ball){
          int th_imgwidth = floor(img.width/3);
          if (img_pos < th_imgwidth){
-              lin_x = .5;
+              lin_x = 0;
               ang_z = .5;
          }else if (img_pos > 2*th_imgwidth){
-              lin_x = .5;
+              lin_x = 0;
               ang_z = -.5;
          }else{
              lin_x = .5;
