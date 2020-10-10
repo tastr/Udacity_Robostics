@@ -30,4 +30,4 @@ PROJECT_NAME = 'turtlebot_bringup'
 PROJECT_BINARY_DIR = '/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot_bringup'
 PROJECT_SOURCE_DIR = '/home/robond/Udacity_Robotics/catkin_ws/src/turtlebot/turtlebot_bringup'
 
-PYTHON_EXECUTABLE = '/usr/bin/python'
+PYTHON_EXECUTABLE = '/usr/bin/python2'

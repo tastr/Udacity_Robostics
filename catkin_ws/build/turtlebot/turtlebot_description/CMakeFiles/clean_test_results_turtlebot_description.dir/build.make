@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/robond/Udacity_Robotics/catkin_ws/build
 include turtlebot/turtlebot_description/CMakeFiles/clean_test_results_turtlebot_description.dir/progress.make
 
 turtlebot/turtlebot_description/CMakeFiles/clean_test_results_turtlebot_description:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot_description && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/robond/Udacity_Robotics/catkin_ws/build/test_results/turtlebot_description
+	cd /home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot_description && /usr/bin/python2 /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/robond/Udacity_Robotics/catkin_ws/build/test_results/turtlebot_description
 
 clean_test_results_turtlebot_description: turtlebot/turtlebot_description/CMakeFiles/clean_test_results_turtlebot_description
 clean_test_results_turtlebot_description: turtlebot/turtlebot_description/CMakeFiles/clean_test_results_turtlebot_description.dir/build.make

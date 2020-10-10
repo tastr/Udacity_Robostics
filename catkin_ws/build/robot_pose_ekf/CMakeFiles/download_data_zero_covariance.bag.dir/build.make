@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/robond/Udacity_Robotics/catkin_ws/build
 include robot_pose_ekf/CMakeFiles/download_data_zero_covariance.bag.dir/progress.make
 
 robot_pose_ekf/CMakeFiles/download_data_zero_covariance.bag:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/robot_pose_ekf/zero_covariance_indexed.bag /home/robond/Udacity_Robotics/catkin_ws/devel/share/robot_pose_ekf/test/zero_covariance_indexed.bag 1f1f4e361a9e0b0f6b1379b2dd011088 --ignore-error
+	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && /usr/bin/python2 /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/robot_pose_ekf/zero_covariance_indexed.bag /home/robond/Udacity_Robotics/catkin_ws/devel/share/robot_pose_ekf/test/zero_covariance_indexed.bag 1f1f4e361a9e0b0f6b1379b2dd011088 --ignore-error
 
 download_data_zero_covariance.bag: robot_pose_ekf/CMakeFiles/download_data_zero_covariance.bag
 download_data_zero_covariance.bag: robot_pose_ekf/CMakeFiles/download_data_zero_covariance.bag.dir/build.make

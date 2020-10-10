@@ -59,7 +59,7 @@ robot_pose_ekf/CMakeFiles/robot_pose_ekf_generate_messages_nodejs: /home/robond/
 /home/robond/Udacity_Robotics/catkin_ws/devel/share/gennodejs/ros/robot_pose_ekf/srv/GetStatus.js: /opt/ros/kinetic/lib/gennodejs/gen_nodejs.py
 /home/robond/Udacity_Robotics/catkin_ws/devel/share/gennodejs/ros/robot_pose_ekf/srv/GetStatus.js: /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robond/Udacity_Robotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Javascript code from robot_pose_ekf/GetStatus.srv"
-	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p robot_pose_ekf -o /home/robond/Udacity_Robotics/catkin_ws/devel/share/gennodejs/ros/robot_pose_ekf/srv
+	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p robot_pose_ekf -o /home/robond/Udacity_Robotics/catkin_ws/devel/share/gennodejs/ros/robot_pose_ekf/srv
 
 robot_pose_ekf_generate_messages_nodejs: robot_pose_ekf/CMakeFiles/robot_pose_ekf_generate_messages_nodejs
 robot_pose_ekf_generate_messages_nodejs: /home/robond/Udacity_Robotics/catkin_ws/devel/share/gennodejs/ros/robot_pose_ekf/srv/GetStatus.js

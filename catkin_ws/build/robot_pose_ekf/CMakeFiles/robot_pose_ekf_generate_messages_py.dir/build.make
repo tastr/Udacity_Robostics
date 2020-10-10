@@ -60,12 +60,12 @@ robot_pose_ekf/CMakeFiles/robot_pose_ekf_generate_messages_py: /home/robond/Udac
 /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv/_GetStatus.py: /opt/ros/kinetic/lib/genpy/gensrv_py.py
 /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv/_GetStatus.py: /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robond/Udacity_Robotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV robot_pose_ekf/GetStatus"
-	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p robot_pose_ekf -o /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv
+	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p robot_pose_ekf -o /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv
 
 /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv/__init__.py: /opt/ros/kinetic/lib/genpy/genmsg_py.py
 /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv/__init__.py: /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv/_GetStatus.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robond/Udacity_Robotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for robot_pose_ekf"
-	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv --initpy
+	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv --initpy
 
 robot_pose_ekf_generate_messages_py: robot_pose_ekf/CMakeFiles/robot_pose_ekf_generate_messages_py
 robot_pose_ekf_generate_messages_py: /home/robond/Udacity_Robotics/catkin_ws/devel/lib/python2.7/dist-packages/robot_pose_ekf/srv/_GetStatus.py

@@ -59,7 +59,7 @@ robot_pose_ekf/CMakeFiles/robot_pose_ekf_generate_messages_lisp: /home/robond/Ud
 /home/robond/Udacity_Robotics/catkin_ws/devel/share/common-lisp/ros/robot_pose_ekf/srv/GetStatus.lisp: /opt/ros/kinetic/lib/genlisp/gen_lisp.py
 /home/robond/Udacity_Robotics/catkin_ws/devel/share/common-lisp/ros/robot_pose_ekf/srv/GetStatus.lisp: /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/robond/Udacity_Robotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from robot_pose_ekf/GetStatus.srv"
-	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p robot_pose_ekf -o /home/robond/Udacity_Robotics/catkin_ws/devel/share/common-lisp/ros/robot_pose_ekf/srv
+	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && ../catkin_generated/env_cached.sh /usr/bin/python2 /opt/ros/kinetic/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/robond/Udacity_Robotics/catkin_ws/src/robot_pose_ekf/srv/GetStatus.srv -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p robot_pose_ekf -o /home/robond/Udacity_Robotics/catkin_ws/devel/share/common-lisp/ros/robot_pose_ekf/srv
 
 robot_pose_ekf_generate_messages_lisp: robot_pose_ekf/CMakeFiles/robot_pose_ekf_generate_messages_lisp
 robot_pose_ekf_generate_messages_lisp: /home/robond/Udacity_Robotics/catkin_ws/devel/share/common-lisp/ros/robot_pose_ekf/srv/GetStatus.lisp

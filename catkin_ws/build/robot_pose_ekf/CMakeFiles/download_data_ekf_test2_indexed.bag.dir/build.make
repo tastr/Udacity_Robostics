@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/robond/Udacity_Robotics/catkin_ws/build
 include robot_pose_ekf/CMakeFiles/download_data_ekf_test2_indexed.bag.dir/progress.make
 
 robot_pose_ekf/CMakeFiles/download_data_ekf_test2_indexed.bag:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/robot_pose_ekf/ekf_test2_indexed.bag /home/robond/Udacity_Robotics/catkin_ws/devel/share/robot_pose_ekf/test/ekf_test2_indexed.bag 71addef0ed900e05b301e0b4fdca99e2 --ignore-error
+	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && /usr/bin/python2 /opt/ros/kinetic/share/catkin/cmake/test/download_checkmd5.py http://download.ros.org/data/robot_pose_ekf/ekf_test2_indexed.bag /home/robond/Udacity_Robotics/catkin_ws/devel/share/robot_pose_ekf/test/ekf_test2_indexed.bag 71addef0ed900e05b301e0b4fdca99e2 --ignore-error
 
 download_data_ekf_test2_indexed.bag: robot_pose_ekf/CMakeFiles/download_data_ekf_test2_indexed.bag
 download_data_ekf_test2_indexed.bag: robot_pose_ekf/CMakeFiles/download_data_ekf_test2_indexed.bag.dir/build.make

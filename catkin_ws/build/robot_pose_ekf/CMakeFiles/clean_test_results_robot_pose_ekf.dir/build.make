@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/robond/Udacity_Robotics/catkin_ws/build
 include robot_pose_ekf/CMakeFiles/clean_test_results_robot_pose_ekf.dir/progress.make
 
 robot_pose_ekf/CMakeFiles/clean_test_results_robot_pose_ekf:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && /usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/robond/Udacity_Robotics/catkin_ws/build/test_results/robot_pose_ekf
+	cd /home/robond/Udacity_Robotics/catkin_ws/build/robot_pose_ekf && /usr/bin/python2 /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/robond/Udacity_Robotics/catkin_ws/build/test_results/robot_pose_ekf
 
 clean_test_results_robot_pose_ekf: robot_pose_ekf/CMakeFiles/clean_test_results_robot_pose_ekf
 clean_test_results_robot_pose_ekf: robot_pose_ekf/CMakeFiles/clean_test_results_robot_pose_ekf.dir/build.make
