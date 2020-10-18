@@ -1,8 +1,0 @@
-prefix=/home/robond/Udacity_Robotics/catkin_workspace/devel
-
-Name: first_package
-Description: Description of first_package
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/robond/Udacity_Robotics/catkin_workspace/devel/lib 
-Requires: 
