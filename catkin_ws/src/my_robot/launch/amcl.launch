@@ -9,9 +9,11 @@
 
   <!-- AMCL Node -->
   <node name="amcl" pkg="amcl" type="amcl" output="screen">
-    <remap from="scan" to="my_robot/laser/scan"/>
+    <remap from="scan" to="/scan"/>
     <param name="odom_frame_id" value="odom"/>
     <param name="odom_model_type" value="diff-corrected"/>
+    <param name="odom_alpha1" value=".35"/>
+    <param name="odom_alpha2" value=".35"/>
     <param name="base_frame_id" value="robot_footprint"/>
     <param name="global_frame_id" value="map"/>
 
@@ -19,11 +21,21 @@
     <param name="initial_pose_x" value="0"/>
     <param name="initial_pose_y" value="0"/>
     <param name="initial_pose_a" value="-1.5707"/>
+
+    <!-- My parameters -->
+    <param name="min_particles" value="100"/>
+    <param name="max_particles" value="1500"/>
+
+    <param name="laser_z_hit" value="0.98"/>	
+    <param name="laser_z_rand" value="0.02"/>	
+    <param name="transform_tolerance" value="0.1"/>
+    <param name="laser_likelihood_max_dist" value="1"/>
+    <param name="laser_sigma_hit" value=".1"/>
  </node>
 
 <!-- Move Base -->
   <node name="move_base" pkg="move_base" type="move_base" respawn="false" output="screen">
-  <remap from="scan" to="my_robot/laser/scan"/>
+  <remap from="scan" to="/scan"/>
   <param name="base_global_planner" value="navfn/NavfnROS" />
   <param name="base_local_planner" value="base_local_planner/TrajectoryPlannerROS"/>
   <rosparam file="/home/robond/Udacity_Robotics/catkin_ws/src/my_robot/config/costmap_common_params.yaml" command="load" ns="global_costmap" />
