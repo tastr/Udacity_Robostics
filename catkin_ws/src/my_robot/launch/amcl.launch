@@ -1,4 +1,4 @@
-	<launch>
+<launch>
 
   <!-- Map Server -->
 <arg name="map_file" default="$(find my_robot)/maps/map.yaml"/>
@@ -7,7 +7,8 @@
 
 
   <!-- AMCL Node -->
-  <node name="amcl" pkg="amcl" type="amcl" output="screen">ss
+  <node name="amcl" pkg="amcl" type="amcl" output="screen">
+    <remap from="scan" to="my_robot/laser/scan"/>
     <param name="odom_frame_id" value="odom"/>
     <param name="odom_model_type" value="diff-corrected"/>
     <param name="base_frame_id" value="robot_footprint"/>
@@ -24,12 +25,10 @@
   <rosparam file="/home/robond/Udacity_Robotics/catkin_ws/src/my_robot//config/global_costmap_params.yaml" command="load" />
   <rosparam file="/home/robond/Udacity_Robotics/catkin_ws/src/my_robot//config/base_local_planner_params.yaml" command="load" />
 
-  </node>
-
-
   <!-- If you choose to define initial pose here -->
   <param name="initial_pose_x" value="0"/>
   <param name="initial_pose_y" value="0"/>
   <param name="initial_pose_a" value="-1.5707"/>
+  </node>
 
 </launch>
