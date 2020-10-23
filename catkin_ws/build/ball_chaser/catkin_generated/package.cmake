@@ -10,4 +10,7 @@ set(ball_chaser_EXEC_DEPENDS "roscpp" "std_msgs" "controller_manager" "effort_co
 set(ball_chaser_RUN_DEPENDS "roscpp" "std_msgs" "controller_manager" "effort_controllers" "gazebo_plugins" "gazebo_ros" "gazebo_ros_control" "joint_state_controller" "joint_state_publisher" "robot_state_publisher" "message_runtime" "xacro")
 set(ball_chaser_TEST_DEPENDS )
 set(ball_chaser_DOC_DEPENDS )
+set(ball_chaser_URL_WEBSITE "")
+set(ball_chaser_URL_BUGTRACKER "")
+set(ball_chaser_URL_REPOSITORY "")
 set(ball_chaser_DEPRECATED "")

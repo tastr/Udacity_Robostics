@@ -231,6 +231,32 @@ doxygen/fast:
 .PHONY : doxygen/fast
 
 #=============================================================================
+# Target rules for targets named gmock
+
+# Build rule for target.
+gmock: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock
+.PHONY : gmock
+
+# fast build rule for target.
+gmock/fast:
+	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
+.PHONY : gmock/fast
+
+#=============================================================================
+# Target rules for targets named gmock_main
+
+# Build rule for target.
+gmock_main: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
+.PHONY : gmock_main
+
+# fast build rule for target.
+gmock_main/fast:
+	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
+.PHONY : gmock_main/fast
+
+#=============================================================================
 # Target rules for targets named gtest
 
 # Build rule for target.
@@ -240,7 +266,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
+	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -253,7 +279,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 #=============================================================================
@@ -266,7 +292,7 @@ _catkin_empty_exported_target: cmake_check_build_system
 
 # fast build rule for target.
 _catkin_empty_exported_target/fast:
-	$(MAKE) -f my_robot/CMakeFiles/_catkin_empty_exported_target.dir/build.make my_robot/CMakeFiles/_catkin_empty_exported_target.dir/build
+	$(MAKE) -f main/CMakeFiles/_catkin_empty_exported_target.dir/build.make main/CMakeFiles/_catkin_empty_exported_target.dir/build
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
@@ -646,45 +672,6 @@ ball_chaser_generate_messages_lisp/fast:
 	$(MAKE) -f ball_chaser/CMakeFiles/ball_chaser_generate_messages_lisp.dir/build.make ball_chaser/CMakeFiles/ball_chaser_generate_messages_lisp.dir/build
 .PHONY : ball_chaser_generate_messages_lisp/fast
 
-#=============================================================================
-# Target rules for targets named request_publisher
-
-# Build rule for target.
-request_publisher: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 request_publisher
-.PHONY : request_publisher
-
-# fast build rule for target.
-request_publisher/fast:
-	$(MAKE) -f pgm_map_creator/CMakeFiles/request_publisher.dir/build.make pgm_map_creator/CMakeFiles/request_publisher.dir/build
-.PHONY : request_publisher/fast
-
-#=============================================================================
-# Target rules for targets named collision_map_creator
-
-# Build rule for target.
-collision_map_creator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collision_map_creator
-.PHONY : collision_map_creator
-
-# fast build rule for target.
-collision_map_creator/fast:
-	$(MAKE) -f pgm_map_creator/CMakeFiles/collision_map_creator.dir/build.make pgm_map_creator/CMakeFiles/collision_map_creator.dir/build
-.PHONY : collision_map_creator/fast
-
-#=============================================================================
-# Target rules for targets named collision_map_creator_msgs
-
-# Build rule for target.
-collision_map_creator_msgs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 collision_map_creator_msgs
-.PHONY : collision_map_creator_msgs
-
-# fast build rule for target.
-collision_map_creator_msgs/fast:
-	$(MAKE) -f pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/build.make pgm_map_creator/msgs/CMakeFiles/collision_map_creator_msgs.dir/build
-.PHONY : collision_map_creator_msgs/fast
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -703,6 +690,8 @@ help:
 	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... test"
+	@echo "... gmock"
+	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
@@ -735,9 +724,6 @@ help:
 	@echo "... ball_chaser_generate_messages_eus"
 	@echo "... ball_chaser_geneus"
 	@echo "... ball_chaser_generate_messages_lisp"
-	@echo "... request_publisher"
-	@echo "... collision_map_creator"
-	@echo "... collision_map_creator_msgs"
 .PHONY : help
 
 

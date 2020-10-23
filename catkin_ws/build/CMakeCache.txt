@@ -47,6 +47,10 @@ CATKIN_ENABLE_TESTING:BOOL=ON
 //Catkin skip testing
 CATKIN_SKIP_TESTING:BOOL=OFF
 
+//Replace the CMake install command with a custom implementation
+// using symlinks instead of copying resources
+CATKIN_SYMLINK_INSTALL:BOOL=OFF
+
 //List of ';' separated packages to build
 CATKIN_WHITELIST_PACKAGES:STRING=
 
@@ -210,6 +214,9 @@ EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
 //Empy script
 EMPY_SCRIPT:STRING=/usr/bin/empy
 
+//The directory containing a CMake configuration file for GMock.
+GMock_DIR:PATH=GMock_DIR-NOTFOUND
+
 //Path to a file.
 GTEST_INCLUDE_DIR:PATH=/usr/include
 
@@ -279,6 +286,9 @@ RT_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 //Enable debian style python package layout
 SETUPTOOLS_DEB_LAYOUT:BOOL=ON
 
+//Name of the computer/site where compile is being run
+SITE:STRING=udacity
+
 //LSB Distrib tag
 UBUNTU:BOOL=TRUE
 
@@ -290,6 +300,18 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 
 //Path to a file.
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
+
+//Path to a file.
+_gmock_INCLUDES:FILEPATH=/usr/include/gmock/gmock.h
+
+//Path to a file.
+_gmock_SOURCES:FILEPATH=/usr/src/gmock/src/gmock.cc
+
+//Path to a file.
+_gtest_INCLUDES:FILEPATH=/usr/include/gtest/gtest.h
+
+//Path to a file.
+_gtest_SOURCES:FILEPATH=/usr/src/gtest/src/gtest.cc
 
 //Value Computed by CMake
 ball_chaser_BINARY_DIR:STATIC=/home/robond/Udacity_Robotics/catkin_ws/build/ball_chaser
@@ -328,7 +350,22 @@ gennodejs_DIR:PATH=/opt/ros/kinetic/share/gennodejs/cmake
 genpy_DIR:PATH=/opt/ros/kinetic/share/genpy/cmake
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/home/robond/Udacity_Robotics/catkin_ws/build/gtest
+gmock_BINARY_DIR:STATIC=/home/robond/Udacity_Robotics/catkin_ws/build/gtest
+
+//Dependencies for the target
+gmock_LIB_DEPENDS:STATIC=general;-lpthread;
+
+//Value Computed by CMake
+gmock_SOURCE_DIR:STATIC=/usr/src/gmock
+
+//Build all of Google Mock's own tests.
+gmock_build_tests:BOOL=OFF
+
+//Dependencies for the target
+gmock_main_LIB_DEPENDS:STATIC=general;-lpthread;
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=/home/robond/Udacity_Robotics/catkin_ws/build/gtest/gtest
 
 //Dependencies for the target
 gtest_LIB_DEPENDS:STATIC=general;-lpthread;
@@ -354,6 +391,12 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/kinetic/lib/libxmlrpcpp.so
+
+//Value Computed by CMake
+main_BINARY_DIR:STATIC=/home/robond/Udacity_Robotics/catkin_ws/build/main
+
+//Value Computed by CMake
+main_SOURCE_DIR:STATIC=/home/robond/Udacity_Robotics/catkin_ws/src/main
 
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/kinetic/share/message_generation/cmake
@@ -520,7 +563,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -601,6 +644,11 @@ GAZEBO_gazebo_INCLUDEDIR:INTERNAL=
 GAZEBO_gazebo_LIBDIR:INTERNAL=
 GAZEBO_gazebo_PREFIX:INTERNAL=
 GAZEBO_gazebo_VERSION:INTERNAL=
+GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE
+GMOCK_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
+GMOCK_FROM_SOURCE_LIBRARIES:INTERNAL=gmock
+GMOCK_FROM_SOURCE_LIBRARY_DIRS:INTERNAL=/home/robond/Udacity_Robotics/catkin_ws/build/gmock
+GMOCK_FROM_SOURCE_MAIN_LIBRARIES:INTERNAL=gmock_main
 GTEST_FROM_SOURCE_FOUND:INTERNAL=TRUE
 GTEST_FROM_SOURCE_INCLUDE_DIRS:INTERNAL=/usr/include
 GTEST_FROM_SOURCE_LIBRARIES:INTERNAL=gtest
