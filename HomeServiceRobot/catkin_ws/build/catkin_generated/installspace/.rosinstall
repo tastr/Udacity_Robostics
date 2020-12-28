@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/install/setup.sh

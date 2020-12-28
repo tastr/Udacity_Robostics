@@ -1,0 +1,8 @@
+prefix=/home/robond/Udacity_Robotics/catkin_ws/install
+
+Name: move_base_msgs
+Description: Description of move_base_msgs
+Version: 1.14.1
+Cflags: -I/home/robond/Udacity_Robotics/catkin_ws/install/include
+Libs: -L/home/robond/Udacity_Robotics/catkin_ws/install/lib 
+Requires: actionlib_msgs geometry_msgs message_runtime

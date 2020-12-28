@@ -68,47 +68,38 @@ endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/robond/Udacity_Robotics/catkin_ws/install/setup.bash;/home/robond/Udacity_Robotics/catkin_ws/install/local_setup.bash")
+   "/home/robond/Udacity_Robotics/catkin_ws/install/setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/robond/Udacity_Robotics/catkin_ws/install" TYPE FILE FILES
-    "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/setup.bash"
-    "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/local_setup.bash"
-    )
+file(INSTALL DESTINATION "/home/robond/Udacity_Robotics/catkin_ws/install" TYPE FILE FILES "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/setup.bash")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/robond/Udacity_Robotics/catkin_ws/install/setup.sh;/home/robond/Udacity_Robotics/catkin_ws/install/local_setup.sh")
+   "/home/robond/Udacity_Robotics/catkin_ws/install/setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/robond/Udacity_Robotics/catkin_ws/install" TYPE FILE FILES
-    "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/setup.sh"
-    "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/local_setup.sh"
-    )
+file(INSTALL DESTINATION "/home/robond/Udacity_Robotics/catkin_ws/install" TYPE FILE FILES "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/setup.sh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/robond/Udacity_Robotics/catkin_ws/install/setup.zsh;/home/robond/Udacity_Robotics/catkin_ws/install/local_setup.zsh")
+   "/home/robond/Udacity_Robotics/catkin_ws/install/setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/robond/Udacity_Robotics/catkin_ws/install" TYPE FILE FILES
-    "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/setup.zsh"
-    "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/local_setup.zsh"
-    )
+file(INSTALL DESTINATION "/home/robond/Udacity_Robotics/catkin_ws/install" TYPE FILE FILES "/home/robond/Udacity_Robotics/catkin_ws/build/catkin_generated/installspace/setup.zsh")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -126,6 +117,21 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/robond/Udacity_Robotics/catkin_ws/build/gtest/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/main/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/my_robot/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/navigation_msgs/move_base_msgs/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/navigation_msgs/map_msgs/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot_bringup/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot_capabilities/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot_simulator/turtlebot_gazebo/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot_simulator/turtlebot_simulator/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot_simulator/turtlebot_stage/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot_simulator/turtlebot_stdr/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/ball_chaser/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/pick_objects/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot_teleop/cmake_install.cmake")
+  include("/home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot_description/cmake_install.cmake")
 
 endif()
 

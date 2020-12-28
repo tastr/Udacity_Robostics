@@ -1,0 +1,165 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_97c4f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_97c4f.dir/build.make CMakeFiles/cmTC_97c4f.dir/build
+make[1]: Entering directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97c4f.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_97c4f.dir/CheckSymbolExists.c.o   -c /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_97c4f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97c4f.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_97c4f.dir/CheckSymbolExists.c.o  -o cmTC_97c4f -rdynamic 
+CMakeFiles/cmTC_97c4f.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_97c4f.dir/build.make:97: recipe for target 'cmTC_97c4f' failed
+make[1]: *** [cmTC_97c4f] Error 1
+make[1]: Leaving directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_97c4f/fast' failed
+make: *** [cmTC_97c4f/fast] Error 2
+
+File /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_f3467/fast"
+/usr/bin/make -f CMakeFiles/cmTC_f3467.dir/build.make CMakeFiles/cmTC_f3467.dir/build
+make[1]: Entering directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f3467.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f3467.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_f3467
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3467.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_f3467.dir/CheckFunctionExists.c.o  -o cmTC_f3467 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f3467.dir/build.make:97: recipe for target 'cmTC_f3467' failed
+make[1]: *** [cmTC_f3467] Error 1
+make[1]: Leaving directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_f3467/fast' failed
+make: *** [cmTC_f3467/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_84a60/fast"
+/usr/bin/make -f CMakeFiles/cmTC_84a60.dir/build.make CMakeFiles/cmTC_84a60.dir/build
+make[1]: Entering directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_84a60.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_84a60.dir/CheckSymbolExists.c.o   -c /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_84a60
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84a60.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_84a60.dir/CheckSymbolExists.c.o  -o cmTC_84a60 -rdynamic 
+CMakeFiles/cmTC_84a60.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_84a60.dir/build.make:97: recipe for target 'cmTC_84a60' failed
+make[1]: *** [cmTC_84a60] Error 1
+make[1]: Leaving directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_84a60/fast' failed
+make: *** [cmTC_84a60/fast] Error 2
+
+File /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0fea3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0fea3.dir/build.make CMakeFiles/cmTC_0fea3.dir/build
+make[1]: Entering directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0fea3.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_0fea3.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0fea3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fea3.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_0fea3.dir/CheckFunctionExists.c.o  -o cmTC_0fea3 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0fea3.dir/build.make:97: recipe for target 'cmTC_0fea3' failed
+make[1]: *** [cmTC_0fea3] Error 1
+make[1]: Leaving directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_0fea3/fast' failed
+make: *** [cmTC_0fea3/fast] Error 2
+
+
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_dc894/fast"
+/usr/bin/make -f CMakeFiles/cmTC_dc894.dir/build.make CMakeFiles/cmTC_dc894.dir/build
+make[1]: Entering directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc894.dir/CheckSymbolExists.c.o
+/usr/bin/cc     -o CMakeFiles/cmTC_dc894.dir/CheckSymbolExists.c.o   -c /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_dc894
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dc894.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTC_dc894.dir/CheckSymbolExists.c.o  -o cmTC_dc894 -rdynamic 
+CMakeFiles/cmTC_dc894.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_dc894.dir/build.make:97: recipe for target 'cmTC_dc894' failed
+make[1]: *** [cmTC_dc894] Error 1
+make[1]: Leaving directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_dc894/fast' failed
+make: *** [cmTC_dc894/fast] Error 2
+
+File /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_759be/fast"
+/usr/bin/make -f CMakeFiles/cmTC_759be.dir/build.make CMakeFiles/cmTC_759be.dir/build
+make[1]: Entering directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_759be.dir/CheckFunctionExists.c.o
+/usr/bin/cc    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_759be.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.5/Modules/CheckFunctionExists.c
+Linking C executable cmTC_759be
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_759be.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_759be.dir/CheckFunctionExists.c.o  -o cmTC_759be -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_759be.dir/build.make:97: recipe for target 'cmTC_759be' failed
+make[1]: *** [cmTC_759be] Error 1
+make[1]: Leaving directory '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_759be/fast' failed
+make: *** [cmTC_759be/fast] Error 2
+
+

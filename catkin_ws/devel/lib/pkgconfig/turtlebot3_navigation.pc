@@ -1,0 +1,8 @@
+prefix=/home/robond/Udacity_Robotics/catkin_ws/devel
+
+Name: turtlebot3_navigation
+Description: Description of turtlebot3_navigation
+Version: 1.2.4
+Cflags: 
+Libs: -L/home/robond/Udacity_Robotics/catkin_ws/devel/lib 
+Requires: 
