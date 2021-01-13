@@ -5,6 +5,8 @@
 # it emulates the modifications of the setup script without recurring computations
 
 # new environment variables
+export ROS_PYTHON_VERSION='2'
+export ROS_VERSION='1'
 
 # modified environment variables
-export PWD="/home/robond/Udacity_Robotics/catkin_ws/build"
+export PWD='/home/robond/Udacity_Robotics/catkin_ws/build'

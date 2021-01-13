@@ -40,6 +40,7 @@ struct SaveMapRequest_
 
 
 
+
   typedef boost::shared_ptr< ::map_msgs::SaveMapRequest_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::SaveMapRequest_<ContainerAllocator> const> ConstPtr;
 

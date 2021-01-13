@@ -56,16 +56,15 @@ CMAKE_BINARY_DIR = /home/robond/Udacity_Robotics/catkin_ws/build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
 
-.PHONY : rebuild_cache/fast
+.PHONY : list_install_components/fast
 
 # Special rule for the target install
 install: preinstall
@@ -78,27 +77,6 @@ install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -132,6 +110,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -181,6 +170,21 @@ diagnostic_msgs_generate_messages_nodejs/fast:
 .PHONY : diagnostic_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
+turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+.PHONY : turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+diagnostic_msgs_generate_messages_lisp: turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : diagnostic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+diagnostic_msgs_generate_messages_lisp/fast:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
+.PHONY : diagnostic_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
 turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule:
 	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
 .PHONY : turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_eus.dir/rule
@@ -226,21 +230,6 @@ diagnostic_msgs_generate_messages_py/fast:
 .PHONY : diagnostic_msgs_generate_messages_py/fast
 
 # Convenience name for target.
-turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-.PHONY : turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-diagnostic_msgs_generate_messages_lisp: turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : diagnostic_msgs_generate_messages_lisp
-
-# fast build rule for target.
-diagnostic_msgs_generate_messages_lisp/fast:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build.make turtlebot/turtlebot_teleop/CMakeFiles/diagnostic_msgs_generate_messages_lisp.dir/build
-.PHONY : diagnostic_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
 turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/rule:
 	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/rule
 .PHONY : turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/rule
@@ -254,6 +243,11 @@ turtlebot_teleop_joy: turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy
 turtlebot_teleop_joy/fast:
 	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/build.make turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/build
 .PHONY : turtlebot_teleop_joy/fast
+
+# Manual pre-install relink rule for target.
+turtlebot_teleop_joy/preinstall:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot/turtlebot_teleop/CMakeFiles/turtlebot_teleop_joy.dir/preinstall
+.PHONY : turtlebot_teleop_joy/preinstall
 
 src/turtlebot_joy.o: src/turtlebot_joy.cpp.o
 
@@ -288,19 +282,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... diagnostic_msgs_generate_messages_nodejs"
+	@echo "... list_install_components"
+	@echo "... diagnostic_msgs_generate_messages_lisp"
 	@echo "... diagnostic_msgs_generate_messages_eus"
 	@echo "... install"
 	@echo "... diagnostic_msgs_generate_messages_cpp"
 	@echo "... diagnostic_msgs_generate_messages_py"
-	@echo "... list_install_components"
-	@echo "... diagnostic_msgs_generate_messages_lisp"
-	@echo "... install/strip"
 	@echo "... install/local"
 	@echo "... turtlebot_teleop_joy"
 	@echo "... test"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... src/turtlebot_joy.o"
 	@echo "... src/turtlebot_joy.i"
 	@echo "... src/turtlebot_joy.s"

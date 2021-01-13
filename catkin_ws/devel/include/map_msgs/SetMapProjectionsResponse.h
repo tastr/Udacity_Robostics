@@ -40,6 +40,7 @@ struct SetMapProjectionsResponse_
 
 
 
+
   typedef boost::shared_ptr< ::map_msgs::SetMapProjectionsResponse_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::SetMapProjectionsResponse_<ContainerAllocator> const> ConstPtr;
 

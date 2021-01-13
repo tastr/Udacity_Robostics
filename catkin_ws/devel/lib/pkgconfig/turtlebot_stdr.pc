@@ -4,5 +4,5 @@ Name: turtlebot_stdr
 Description: Description of turtlebot_stdr
 Version: 2.2.3
 Cflags: 
-Libs: -L/home/robond/Udacity_Robotics/catkin_ws/devel/lib 
+Libs: -L${prefix}/lib 
 Requires: 

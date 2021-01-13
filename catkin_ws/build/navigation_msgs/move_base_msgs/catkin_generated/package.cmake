@@ -10,4 +10,7 @@ set(move_base_msgs_EXEC_DEPENDS "actionlib_msgs" "geometry_msgs" "message_runtim
 set(move_base_msgs_RUN_DEPENDS "actionlib_msgs" "geometry_msgs" "message_runtime")
 set(move_base_msgs_TEST_DEPENDS )
 set(move_base_msgs_DOC_DEPENDS )
+set(move_base_msgs_URL_WEBSITE "http://wiki.ros.org/move_base_msgs")
+set(move_base_msgs_URL_BUGTRACKER "https://github.com/ros-planning/navigation_msgs/issues")
+set(move_base_msgs_URL_REPOSITORY "")
 set(move_base_msgs_DEPRECATED "")

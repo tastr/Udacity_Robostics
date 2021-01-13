@@ -52,6 +52,7 @@ struct MoveBaseActionFeedback_
 
 
 
+
   typedef boost::shared_ptr< ::move_base_msgs::MoveBaseActionFeedback_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::move_base_msgs::MoveBaseActionFeedback_<ContainerAllocator> const> ConstPtr;
 

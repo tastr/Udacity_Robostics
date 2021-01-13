@@ -40,6 +40,7 @@ struct ProjectedMapsInfoRequest_
 
 
 
+
   typedef boost::shared_ptr< ::map_msgs::ProjectedMapsInfoRequest_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::ProjectedMapsInfoRequest_<ContainerAllocator> const> ConstPtr;
 

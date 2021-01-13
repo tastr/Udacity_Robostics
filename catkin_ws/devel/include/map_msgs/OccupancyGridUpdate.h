@@ -65,6 +65,7 @@ struct OccupancyGridUpdate_
 
 
 
+
   typedef boost::shared_ptr< ::map_msgs::OccupancyGridUpdate_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::OccupancyGridUpdate_<ContainerAllocator> const> ConstPtr;
 

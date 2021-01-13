@@ -49,9 +49,12 @@ struct PointCloud2Update_
   _points_type points;
 
 
-    enum { ADD = 0u };
-     enum { DELETE = 1u };
- 
+
+  enum {
+    ADD = 0u,
+    DELETE = 1u,
+  };
+
 
   typedef boost::shared_ptr< ::map_msgs::PointCloud2Update_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::PointCloud2Update_<ContainerAllocator> const> ConstPtr;

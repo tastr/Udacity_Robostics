@@ -36,6 +36,7 @@ struct GetPointMapRequest_
 
 
 
+
   typedef boost::shared_ptr< ::map_msgs::GetPointMapRequest_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::GetPointMapRequest_<ContainerAllocator> const> ConstPtr;
 

@@ -55,6 +55,7 @@ struct RecoveryStatus_
 
 
 
+
   typedef boost::shared_ptr< ::move_base_msgs::RecoveryStatus_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::move_base_msgs::RecoveryStatus_<ContainerAllocator> const> ConstPtr;
 

@@ -90,17 +90,6 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-
-.PHONY : install/local/fast
-
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
@@ -122,16 +111,16 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
 
-# Special rule for the target install/strip
-install/strip/fast: install/strip
+# Special rule for the target install/local
+install/local/fast: install/local
 
-.PHONY : install/strip/fast
+.PHONY : install/local/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -241,6 +230,21 @@ turtlebot_description_xacro_generated_to_devel_space_/fast:
 .PHONY : turtlebot_description_xacro_generated_to_devel_space_/fast
 
 # Convenience name for target.
+turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/rule:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/rule
+.PHONY : turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/rule
+
+# Convenience name for target.
+_run_tests_turtlebot_description_gtest: turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/rule
+
+.PHONY : _run_tests_turtlebot_description_gtest
+
+# fast build rule for target.
+_run_tests_turtlebot_description_gtest/fast:
+	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/build.make turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/build
+.PHONY : _run_tests_turtlebot_description_gtest/fast
+
+# Convenience name for target.
 turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/rule:
 	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/rule
 .PHONY : turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/rule
@@ -285,21 +289,6 @@ clean_test_results_turtlebot_description/fast:
 	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f turtlebot/turtlebot_description/CMakeFiles/clean_test_results_turtlebot_description.dir/build.make turtlebot/turtlebot_description/CMakeFiles/clean_test_results_turtlebot_description.dir/build
 .PHONY : clean_test_results_turtlebot_description/fast
 
-# Convenience name for target.
-turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/rule:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f CMakeFiles/Makefile2 turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/rule
-.PHONY : turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/rule
-
-# Convenience name for target.
-_run_tests_turtlebot_description_gtest: turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/rule
-
-.PHONY : _run_tests_turtlebot_description_gtest
-
-# fast build rule for target.
-_run_tests_turtlebot_description_gtest/fast:
-	cd /home/robond/Udacity_Robotics/catkin_ws/build && $(MAKE) -f turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/build.make turtlebot/turtlebot_description/CMakeFiles/_run_tests_turtlebot_description_gtest.dir/build
-.PHONY : _run_tests_turtlebot_description_gtest/fast
-
 test/test_urdf.o: test/test_urdf.cpp.o
 
 .PHONY : test/test_urdf.o
@@ -336,19 +325,18 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... install/local"
 	@echo "... _run_tests_turtlebot_description"
 	@echo "... run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf"
 	@echo "... test"
 	@echo "... run_tests_turtlebot_description"
 	@echo "... run_tests_turtlebot_description_gtest"
 	@echo "... turtlebot_description_xacro_generated_to_devel_space_"
+	@echo "... list_install_components"
+	@echo "... _run_tests_turtlebot_description_gtest"
 	@echo "... turtlebot_description_test_urdf"
 	@echo "... _run_tests_turtlebot_description_gtest_turtlebot_description_test_urdf"
 	@echo "... clean_test_results_turtlebot_description"
-	@echo "... list_install_components"
-	@echo "... _run_tests_turtlebot_description_gtest"
-	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... test/test_urdf.o"
 	@echo "... test/test_urdf.i"
 	@echo "... test/test_urdf.s"

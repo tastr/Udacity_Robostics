@@ -4,5 +4,5 @@ Name: pick_objects
 Description: Description of pick_objects
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/robond/Udacity_Robotics/catkin_ws/install/lib 
+Libs: -L${prefix}/lib 
 Requires: 

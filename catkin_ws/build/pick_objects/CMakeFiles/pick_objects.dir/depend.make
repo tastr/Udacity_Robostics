@@ -22,6 +22,17 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kineti
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/actionlib_msgs/GoalID.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/actionlib_msgs/GoalStatus.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/actionlib_msgs/GoalStatusArray.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Point.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Pose.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/PoseStamped.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseAction.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseActionFeedback.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseActionGoal.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseActionResult.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseFeedback.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseGoal.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/move_base_msgs/MoveBaseResult.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/advertise_options.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/advertise_service_options.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/assert.h
@@ -37,6 +48,7 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kineti
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/exceptions.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/forwards.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/init.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/internal/condition_variable.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/macros.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/master.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/message.h
@@ -65,6 +77,8 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kineti
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/single_subscriber_publisher.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/spinner.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/static_assert.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/steady_timer.h
+pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/steady_timer_options.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/subscribe_options.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/subscriber.h
 pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o: /opt/ros/kinetic/include/ros/subscription_callback_helper.h

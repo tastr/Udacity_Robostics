@@ -40,6 +40,7 @@ struct GetMapROIResponse_
 
 
 
+
   typedef boost::shared_ptr< ::map_msgs::GetMapROIResponse_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::GetMapROIResponse_<ContainerAllocator> const> ConstPtr;
 

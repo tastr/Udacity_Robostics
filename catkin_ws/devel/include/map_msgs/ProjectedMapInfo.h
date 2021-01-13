@@ -69,6 +69,7 @@ struct ProjectedMapInfo_
 
 
 
+
   typedef boost::shared_ptr< ::map_msgs::ProjectedMapInfo_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::ProjectedMapInfo_<ContainerAllocator> const> ConstPtr;
 

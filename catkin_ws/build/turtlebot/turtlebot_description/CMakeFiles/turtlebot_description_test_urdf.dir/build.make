@@ -90,7 +90,7 @@ turtlebot_description_test_urdf_EXTERNAL_OBJECTS =
 
 /home/robond/Udacity_Robotics/catkin_ws/devel/lib/turtlebot_description/turtlebot_description_test_urdf: turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/test/test_urdf.cpp.o
 /home/robond/Udacity_Robotics/catkin_ws/devel/lib/turtlebot_description/turtlebot_description_test_urdf: turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/build.make
-/home/robond/Udacity_Robotics/catkin_ws/devel/lib/turtlebot_description/turtlebot_description_test_urdf: gtest/libgtest.so
+/home/robond/Udacity_Robotics/catkin_ws/devel/lib/turtlebot_description/turtlebot_description_test_urdf: gtest/gtest/libgtest.so
 /home/robond/Udacity_Robotics/catkin_ws/devel/lib/turtlebot_description/turtlebot_description_test_urdf: turtlebot/turtlebot_description/CMakeFiles/turtlebot_description_test_urdf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robond/Udacity_Robotics/catkin_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/robond/Udacity_Robotics/catkin_ws/devel/lib/turtlebot_description/turtlebot_description_test_urdf"
 	cd /home/robond/Udacity_Robotics/catkin_ws/build/turtlebot/turtlebot_description && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/turtlebot_description_test_urdf.dir/link.txt --verbose=$(VERBOSE)

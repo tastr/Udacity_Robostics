@@ -8,9 +8,9 @@ project(pick_objects)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  actionlib
-  move_base_msgs
   roscpp
+  rospy
+  std_msgs 
 )
 
 ## System dependencies are found with CMake's conventions
@@ -205,5 +205,10 @@ include_directories(
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
 
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+
 add_executable(pick_objects src/pick_objects.cpp)
 target_link_libraries(pick_objects ${catkin_LIBRARIES})
+
+

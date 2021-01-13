@@ -110,17 +110,6 @@ install/local/fast: install/local
 
 .PHONY : install/local/fast
 
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: install/strip
-
-.PHONY : install/strip/fast
-
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
@@ -660,7 +649,6 @@ help:
 	@echo "... _map_msgs_generate_messages_check_deps_ProjectedMapInfo"
 	@echo "... _map_msgs_generate_messages_check_deps_SetMapProjections"
 	@echo "... nav_msgs_generate_messages_nodejs"
-	@echo "... install/strip"
 	@echo "... _map_msgs_generate_messages_check_deps_GetPointMapROI"
 	@echo "... install"
 	@echo "... nav_msgs_generate_messages_lisp"

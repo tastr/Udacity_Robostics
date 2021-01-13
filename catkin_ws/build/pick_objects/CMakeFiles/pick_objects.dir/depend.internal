@@ -23,6 +23,17 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o
  /opt/ros/kinetic/include/actionlib_msgs/GoalID.h
  /opt/ros/kinetic/include/actionlib_msgs/GoalStatus.h
  /opt/ros/kinetic/include/actionlib_msgs/GoalStatusArray.h
+ /opt/ros/kinetic/include/geometry_msgs/Point.h
+ /opt/ros/kinetic/include/geometry_msgs/Pose.h
+ /opt/ros/kinetic/include/geometry_msgs/PoseStamped.h
+ /opt/ros/kinetic/include/geometry_msgs/Quaternion.h
+ /opt/ros/kinetic/include/move_base_msgs/MoveBaseAction.h
+ /opt/ros/kinetic/include/move_base_msgs/MoveBaseActionFeedback.h
+ /opt/ros/kinetic/include/move_base_msgs/MoveBaseActionGoal.h
+ /opt/ros/kinetic/include/move_base_msgs/MoveBaseActionResult.h
+ /opt/ros/kinetic/include/move_base_msgs/MoveBaseFeedback.h
+ /opt/ros/kinetic/include/move_base_msgs/MoveBaseGoal.h
+ /opt/ros/kinetic/include/move_base_msgs/MoveBaseResult.h
  /opt/ros/kinetic/include/ros/advertise_options.h
  /opt/ros/kinetic/include/ros/advertise_service_options.h
  /opt/ros/kinetic/include/ros/assert.h
@@ -38,6 +49,7 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o
  /opt/ros/kinetic/include/ros/exceptions.h
  /opt/ros/kinetic/include/ros/forwards.h
  /opt/ros/kinetic/include/ros/init.h
+ /opt/ros/kinetic/include/ros/internal/condition_variable.h
  /opt/ros/kinetic/include/ros/macros.h
  /opt/ros/kinetic/include/ros/master.h
  /opt/ros/kinetic/include/ros/message.h
@@ -66,6 +78,8 @@ pick_objects/CMakeFiles/pick_objects.dir/src/pick_objects.cpp.o
  /opt/ros/kinetic/include/ros/single_subscriber_publisher.h
  /opt/ros/kinetic/include/ros/spinner.h
  /opt/ros/kinetic/include/ros/static_assert.h
+ /opt/ros/kinetic/include/ros/steady_timer.h
+ /opt/ros/kinetic/include/ros/steady_timer_options.h
  /opt/ros/kinetic/include/ros/subscribe_options.h
  /opt/ros/kinetic/include/ros/subscriber.h
  /opt/ros/kinetic/include/ros/subscription_callback_helper.h

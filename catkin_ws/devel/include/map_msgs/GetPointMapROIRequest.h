@@ -69,6 +69,7 @@ struct GetPointMapROIRequest_
 
 
 
+
   typedef boost::shared_ptr< ::map_msgs::GetPointMapROIRequest_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::map_msgs::GetPointMapROIRequest_<ContainerAllocator> const> ConstPtr;
 

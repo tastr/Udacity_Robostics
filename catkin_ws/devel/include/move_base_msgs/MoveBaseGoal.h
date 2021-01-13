@@ -40,6 +40,7 @@ struct MoveBaseGoal_
 
 
 
+
   typedef boost::shared_ptr< ::move_base_msgs::MoveBaseGoal_<ContainerAllocator> > Ptr;
   typedef boost::shared_ptr< ::move_base_msgs::MoveBaseGoal_<ContainerAllocator> const> ConstPtr;
 
