@@ -7,4 +7,9 @@
 # new environment variables
 
 # modified environment variables
+export CMAKE_PREFIX_PATH='/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/devel:/opt/ros/kinetic'
+export LD_LIBRARY_PATH='/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/devel/lib:/opt/ros/kinetic/lib:/opt/ros/kinetic/lib/x86_64-linux-gnu'
+export PKG_CONFIG_PATH='/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/devel/lib/pkgconfig:/opt/ros/kinetic/lib/pkgconfig:/opt/ros/kinetic/lib/x86_64-linux-gnu/pkgconfig'
 export PWD='/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build'
+export PYTHONPATH='/opt/ros/kinetic/lib/python2.7/dist-packages'
+export ROS_PACKAGE_PATH='/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/src:/opt/ros/kinetic/share'

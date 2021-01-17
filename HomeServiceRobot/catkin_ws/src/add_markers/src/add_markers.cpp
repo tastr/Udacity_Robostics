@@ -17,7 +17,7 @@ void chatterCallback(const std_msgs::Int32::ConstPtr& msg){
     ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
     marker.action = visualization_msgs::Marker::ADD;
 
-    ROS_INFO("ACTUAL STATUS: [%d]", msg->data);
+    ROS_INFO("STATUS: [%d]", msg->data);
 
    if(msg->data == 0){
     marker.pose.position.x = 0;

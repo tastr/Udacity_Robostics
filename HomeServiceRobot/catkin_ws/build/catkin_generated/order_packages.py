@@ -2,4 +2,4 @@
 source_root_dir = '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/src'
 whitelisted_packages = ''.split(';') if '' != '' else []
 blacklisted_packages = ''.split(';') if '' != '' else []
-underlay_workspaces = '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/devel;/home/robond/Udacity_Robotics/catkin_ws/devel;/opt/ros/kinetic'.split(';') if '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/devel;/home/robond/Udacity_Robotics/catkin_ws/devel;/opt/ros/kinetic' != '' else []
+underlay_workspaces = '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/devel;/opt/ros/kinetic'.split(';') if '/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/devel;/opt/ros/kinetic' != '' else []
