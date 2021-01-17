@@ -285,6 +285,19 @@ _catkin_empty_exported_target/fast:
 .PHONY : _catkin_empty_exported_target/fast
 
 #=============================================================================
+# Target rules for targets named add_markers_simple
+
+# Build rule for target.
+add_markers_simple: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 add_markers_simple
+.PHONY : add_markers_simple
+
+# fast build rule for target.
+add_markers_simple/fast:
+	$(MAKE) -f add_markers/CMakeFiles/add_markers_simple.dir/build.make add_markers/CMakeFiles/add_markers_simple.dir/build
+.PHONY : add_markers_simple/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_py
 
 # Build rule for target.
@@ -829,19 +842,6 @@ actionlib_msgs_generate_messages_nodejs: cmake_check_build_system
 actionlib_msgs_generate_messages_nodejs/fast:
 	$(MAKE) -f pick_objects/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make pick_objects/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-#=============================================================================
-# Target rules for targets named simple_navigation_goals
-
-# Build rule for target.
-simple_navigation_goals: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 simple_navigation_goals
-.PHONY : simple_navigation_goals
-
-# fast build rule for target.
-simple_navigation_goals/fast:
-	$(MAKE) -f simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/build.make simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/build
-.PHONY : simple_navigation_goals/fast
 
 #=============================================================================
 # Target rules for targets named _run_tests_gmapping_rostest_test_basic_localization_laser_different_beamcount.test
@@ -1852,6 +1852,7 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... _catkin_empty_exported_target"
+	@echo "... add_markers_simple"
 	@echo "... geometry_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... geometry_msgs_generate_messages_nodejs"
@@ -1894,7 +1895,6 @@ help:
 	@echo "... actionlib_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_cpp"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... simple_navigation_goals"
 	@echo "... _run_tests_gmapping_rostest_test_basic_localization_laser_different_beamcount.test"
 	@echo "... _run_tests_gmapping_rostest_test_basic_localization_upside_down.launch"
 	@echo "... _run_tests_gmapping_rostest_test_basic_localization_symmetry.launch"

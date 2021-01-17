@@ -259,7 +259,7 @@ gtest/preinstall: gtest/gtest/preinstall
 gtest/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock.dir/build.make gtest/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=7,8,9 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=9,10,11 "Built target gmock"
 .PHONY : gtest/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -291,7 +291,7 @@ clean: gtest/CMakeFiles/gmock.dir/clean
 gtest/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gmock_main.dir/build.make gtest/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=10,11,12,13 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=12,13,14,15 "Built target gmock_main"
 .PHONY : gtest/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -342,7 +342,7 @@ gtest/gtest/preinstall:
 gtest/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest.dir/build.make gtest/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=14,15 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=16,17 "Built target gtest"
 .PHONY : gtest/gtest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -374,7 +374,7 @@ clean: gtest/gtest/CMakeFiles/gtest.dir/clean
 gtest/gtest/CMakeFiles/gtest_main.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/gtest/CMakeFiles/gtest_main.dir/build.make gtest/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=16,17 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=18,19 "Built target gtest_main"
 .PHONY : gtest/gtest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -651,11 +651,13 @@ turtlebot_simulator/turtlebot_stdr/preinstall:
 # Directory level rules for directory add_markers
 
 # Convenience name for "all" pass in the directory.
+add_markers/all: add_markers/CMakeFiles/add_markers_simple.dir/all
 add_markers/all: add_markers/CMakeFiles/add_markers.dir/all
 
 .PHONY : add_markers/all
 
 # Convenience name for "clean" pass in the directory.
+add_markers/clean: add_markers/CMakeFiles/add_markers_simple.dir/clean
 add_markers/clean: add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir/clean
 add_markers/clean: add_markers/CMakeFiles/std_msgs_generate_messages_py.dir/clean
 add_markers/clean: add_markers/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/clean
@@ -689,6 +691,43 @@ add_markers/clean: add_markers/CMakeFiles/visualization_msgs_generate_messages_l
 add_markers/preinstall:
 
 .PHONY : add_markers/preinstall
+
+#=============================================================================
+# Target rules for target add_markers/CMakeFiles/add_markers_simple.dir
+
+# All Build rule for target.
+add_markers/CMakeFiles/add_markers_simple.dir/all:
+	$(MAKE) -f add_markers/CMakeFiles/add_markers_simple.dir/build.make add_markers/CMakeFiles/add_markers_simple.dir/depend
+	$(MAKE) -f add_markers/CMakeFiles/add_markers_simple.dir/build.make add_markers/CMakeFiles/add_markers_simple.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=3,4 "Built target add_markers_simple"
+.PHONY : add_markers/CMakeFiles/add_markers_simple.dir/all
+
+# Include target in all.
+all: add_markers/CMakeFiles/add_markers_simple.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+add_markers/CMakeFiles/add_markers_simple.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 add_markers/CMakeFiles/add_markers_simple.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles 0
+.PHONY : add_markers/CMakeFiles/add_markers_simple.dir/rule
+
+# Convenience name for target.
+add_markers_simple: add_markers/CMakeFiles/add_markers_simple.dir/rule
+
+.PHONY : add_markers_simple
+
+# clean rule for target.
+add_markers/CMakeFiles/add_markers_simple.dir/clean:
+	$(MAKE) -f add_markers/CMakeFiles/add_markers_simple.dir/build.make add_markers/CMakeFiles/add_markers_simple.dir/clean
+.PHONY : add_markers/CMakeFiles/add_markers_simple.dir/clean
+
+# clean rule for target.
+clean: add_markers/CMakeFiles/add_markers_simple.dir/clean
+
+.PHONY : clean
 
 #=============================================================================
 # Target rules for target add_markers/CMakeFiles/geometry_msgs_generate_messages_py.dir
@@ -1567,7 +1606,7 @@ pick_objects/preinstall:
 pick_objects/CMakeFiles/pick_objects.dir/all:
 	$(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/depend
 	$(MAKE) -f pick_objects/CMakeFiles/pick_objects.dir/build.make pick_objects/CMakeFiles/pick_objects.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=18,19 "Built target pick_objects"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=20,21 "Built target pick_objects"
 .PHONY : pick_objects/CMakeFiles/pick_objects.dir/all
 
 # Include target in all.
@@ -2074,61 +2113,6 @@ pick_objects/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean:
 
 # clean rule for target.
 clean: pick_objects/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory simple_navigation_goals
-
-# Convenience name for "all" pass in the directory.
-simple_navigation_goals/all: simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/all
-
-.PHONY : simple_navigation_goals/all
-
-# Convenience name for "clean" pass in the directory.
-simple_navigation_goals/clean: simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/clean
-
-.PHONY : simple_navigation_goals/clean
-
-# Convenience name for "preinstall" pass in the directory.
-simple_navigation_goals/preinstall:
-
-.PHONY : simple_navigation_goals/preinstall
-
-#=============================================================================
-# Target rules for target simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir
-
-# All Build rule for target.
-simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/all:
-	$(MAKE) -f simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/build.make simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/depend
-	$(MAKE) -f simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/build.make simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=20,21 "Built target simple_navigation_goals"
-.PHONY : simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/all
-
-# Include target in all.
-all: simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles 0
-.PHONY : simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/rule
-
-# Convenience name for target.
-simple_navigation_goals: simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/rule
-
-.PHONY : simple_navigation_goals
-
-# clean rule for target.
-simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/clean:
-	$(MAKE) -f simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/build.make simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/clean
-.PHONY : simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/clean
-
-# clean rule for target.
-clean: simple_navigation_goals/CMakeFiles/simple_navigation_goals.dir/clean
 
 .PHONY : clean
 
@@ -4016,7 +4000,7 @@ clean: slam_gmapping/gmapping/CMakeFiles/slam_gmapping_replay.dir/clean
 slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/all: gtest/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/build.make slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/depend
 	$(MAKE) -f slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/build.make slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=5,6 "Built target gmapping-rtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=7,8 "Built target gmapping-rtest"
 .PHONY : slam_gmapping/gmapping/CMakeFiles/gmapping-rtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -4637,7 +4621,7 @@ using_markers/preinstall:
 using_markers/CMakeFiles/basic_shapes.dir/all:
 	$(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/depend
 	$(MAKE) -f using_markers/CMakeFiles/basic_shapes.dir/build.make using_markers/CMakeFiles/basic_shapes.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=3,4 "Built target basic_shapes"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robond/Udacity_Robotics/HomeServiceRobot/catkin_ws/build/CMakeFiles --progress-num=5,6 "Built target basic_shapes"
 .PHONY : using_markers/CMakeFiles/basic_shapes.dir/all
 
 # Include target in all.

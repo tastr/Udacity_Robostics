@@ -3,52 +3,65 @@
 #include "nav_msgs/Odometry.h"
 #include <stdlib.h>
 
+#include "std_msgs/Int32.h"
 
-    bool position_reached = false; 
+
+
 
      visualization_msgs::Marker marker;
     // Set our initial shape type to be a cube
     uint32_t shape = visualization_msgs::Marker::CUBE;
 
-void chatterCallback(const nav_msgs::Odometry::ConstPtr& msg)
-{
-   
-    
+void chatterCallback(const std_msgs::Int32::ConstPtr& msg){
     ros::NodeHandle n;
     ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
     marker.action = visualization_msgs::Marker::ADD;
+
+    ROS_INFO("ACTUAL STATUS: [%d]", msg->data);
+
+   if(msg->data == 0){
+    marker.pose.position.x = 0;
+    marker.pose.position.y = -1;
+    marker.pose.position.z = 0;
+    marker.pose.orientation.x = 0.0;
+    marker.pose.orientation.y = 0.0;
+    marker.pose.orientation.z = 0.0;
+    marker.pose.orientation.w = 1.0;
+    ROS_INFO("Setup the first marker");
     marker_pub.publish(marker);
-    
-   if(msg->pose.pose.position.x == .5){
-    ROS_INFO("First marker reached");
+   }
+
+   if(msg->data == 1){
+    ROS_INFO("The first position reached");
     marker.action = visualization_msgs::Marker::DELETE;
     marker_pub.publish(marker);
-    }
+    ROS_INFO("Delete the first marker");
+   }
 
-    if(msg->pose.pose.position.x == -.5){
-    marker.pose.position.x = -.5;
-    marker.action = visualization_msgs::Marker::ADD;
+   if(msg->data == 2){
+    ROS_INFO("The second position reached");
+    marker.pose.position.x = -1;
+    marker.pose.position.y = 0;
+    marker.pose.position.z = 0;
+    marker.pose.orientation.x = 0.0;
+    marker.pose.orientation.y = 0.0;
+    marker.pose.orientation.z = 0.0;
+    marker.pose.orientation.w = 1.0;
     marker_pub.publish(marker);
-    }
-
-    
+   }
 
 
-    marker_pub.publish(marker);
 
 
-//  ROS_INFO("Seq: [%d]", msg->header.seq);
-  ROS_INFO("Position-> x: [%f], y: [%f], z: [%f]", msg->pose.pose.position.x,msg->pose.pose.position.y, msg->pose.pose.position.z);
-//  ROS_INFO("Orientation-> x: [%f], y: [%f], z: [%f], w: [%f]", msg->pose.pose.orientation.x, msg->pose.pose.orientation.y, msg->pose.pose.orientation.z, msg->pose.pose.orientation.w);
-//  ROS_INFO("Vel-> Linear: [%f], Angular: [%f]", msg->twist.twist.linear.x,msg->twist.twist.angular.z);
 }
 
 
 
-
 int main( int argc, char** argv )
-{ ros::init(argc, argv, "add_markers");
-  ros::init(argc, argv, "odom_listener");
+{ 
+    ros::init(argc, argv, "listener");
+    ros::init(argc, argv, "add_markers");
+    //ros::init(argc, argv, "odom_listener");
     ros::NodeHandle n;
     ros::Publisher marker_pub = n.advertise<visualization_msgs::Marker>("visualization_marker", 1);
 
@@ -84,19 +97,11 @@ int main( int argc, char** argv )
     marker.color.a = 1.0;
 
 
-    // Set the pose of the marker.  This is a full 6DOF pose relative to the frame/time specified in the header
-    
-    marker.pose.position.x = .5;
-    marker.pose.position.y = 0;
-    marker.pose.position.z = 0;
-    marker.pose.orientation.x = 0.0;
-    marker.pose.orientation.y = 0.0;
-    marker.pose.orientation.z = 0.0;
-    marker.pose.orientation.w = 1.0;
+
     marker.lifetime = ros::Duration();
 
 
+  ros::Subscriber sub = n.subscribe("chatter", 1000, chatterCallback);
 
-  ros::Subscriber sub = n.subscribe("odom", 1000, chatterCallback);
   ros::spin();
 }
